@@ -33,5 +33,4 @@ jobs:
           #   keep_files: true
           user_name: Christian Gehlen
           user_email: <chr.schmitz01@gmail.com>
-          publish_branch: master
         
