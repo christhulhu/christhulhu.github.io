@@ -1,0 +1,19 @@
+main:
+  - name: "Home"
+    identifier: "home"
+    weight: 100
+    url: "/"
+  - name: "Posts"
+    weight: 200
+    identifier: "posts"
+    url: "/post/"
+  - name: "About"
+    weight: 400
+    identifier: "about"
+    url: "/about/"
+
+#footer:
+#  - name: "imprint"
+#    weight: 1
+#    identifier: "imprint"
+#    url: "/imprint/"
