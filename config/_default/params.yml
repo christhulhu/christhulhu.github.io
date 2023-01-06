@@ -16,9 +16,9 @@ images:
   - "images/site-feature-image.png"
 doNotLoadAnimations: false
 displayMode: "dark"
-singleDateFormat: "2/1/2006"
-indexDateFormat: "2/1/2006"
-listDateFormat: "2/1/2006"
+singleDateFormat: "2006-02-01"
+indexDateFormat: "2006-02-01"
+listDateFormat: "2006-02-01"
 # Read More links for truncated summaries
 # readMore: true
 # postSectionName: "blog"
