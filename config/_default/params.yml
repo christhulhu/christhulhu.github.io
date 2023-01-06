@@ -11,7 +11,7 @@ customCss: []
 # example ["js/custom.js"]
 customJs: [] 
 mainSections: 
-  - "post"
+  - "posts"
 images: 
   - "images/site-feature-image.png"
 doNotLoadAnimations: false

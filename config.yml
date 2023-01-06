@@ -32,9 +32,9 @@ markup:
           unsafe: true
 
 taxonomies:
-    category: "categories"
-    series: "series"
-    tag: "tags"
+    category: categories
+    series: series
+    tag: tags
 
 related:
   includeNewer: true

@@ -6,7 +6,7 @@ main:
   - name: "Posts"
     weight: 200
     identifier: "posts"
-    url: "/post/"
+    url: "/posts/"
   - name: "About"
     weight: 400
     identifier: "about"
