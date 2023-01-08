@@ -1,22 +1,17 @@
 baseURL: "https://christhulhu.github.io"
 languageCode: "en"
 DefaultContentLanguage: "en"
-title: "Website of Christian Gehlen"
+title: "Christian Gehlen"
 
 # theme as hugo module
 #theme: "github.com/lxndrblz/anatole"
 # theme as git submodule
-theme: "anatole"
+#theme: "anatole"
+theme: "m10c"
 
 summarylength: 10
 enableEmoji: true
 enableRobotsTXT: true
-
-# Enable Disqus
-#disqusShortname: ""
-
-# Google Analytics
-#googleAnalytics: "UA-123-45"
 
 # Syntax highlighting
 pygmentsUseClasses: true   
@@ -33,15 +28,4 @@ markup:
 
 taxonomies:
     category: categories
-    series: series
     tag: tags
-
-related:
-  includeNewer: true
-  threshold: 80
-  toLower: true
-  indices:
-    - name: 'keywords'
-      weight: 100
-    - name: 'tags'
-      weight: 80

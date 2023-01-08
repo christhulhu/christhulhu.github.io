@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="post animated fadeInDown">
+
+
+    
+
+<div class="post__content">
+<h1>{{ .Title }}</h1>
+
+<h2>Professional</h2>
+<ul>
+  {{ range .Site.Data.milestones.professional }}
+    <li>
+      <div class="card">
+        <div class="card-head">{{.year }} {{ .title }}</div>
+        <div class="card-text">{{.description | markdownify}}</div>
+      </div>
+    </li>
+    {{ end }}
+</ul>
+
+<h2>Personal</h2>
+<ul>
+  {{ range .Site.Data.milestones.private }}
+    <li>
+      <div class="card">
+        <div class="card-head">{{.year }} {{ .title }}</div>
+        <div class="card-text">{{.description | markdownify}}</div>
+      </div>
+    </li>
+    {{ end }}
+</ul>
+
+</div>
+
+</div>
+{{ end }}

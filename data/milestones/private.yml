@@ -1,0 +1,30 @@
+- year: 2020-2023
+  title: Elektronische Körpermusik
+  description: |-
+    Due to my background with fanzines about music, I supported the team behind the upcoming Book "Elektronische Körpermusik" in their editorial work.
+- year: 2018-now
+  title: Ius Talionis
+  description: |-
+    I play bass for the black metal band Ius Talionis from Aachen. 
+- year: 2010-2020
+  title: Cause Of Divorce
+  description: |- 
+    Not many people would consider Grindcore a musical genre. But if even John Peel was fond of this style, it can't be that bad. I played bass in this band for 10 years, released a couple of Albums and Splits and had several gigs in Germany, Belgium, Netherlands and Czech Republic.
+- year: 2016
+  title: lycanthropic.de
+  description: |-
+    Design and implementation of the homepage and shop for the German underground music label Lycanthropic Chants. The backend is Wordpress as CMS, Woocommerce for the shop and some other plugins for managing digital download codes. The frontend was implemented with the Bones framework.
+    Visit the site on [lycanthropic.de](http://lycanthropic.de/).
+- year: 2015
+  title: Crypticbrood.de
+  description: |-
+    Design and implementation of the homepage for the doom/death metal band Cryptic Brood from Wolfsburg, Germany. The backend is Wordpress as CMS and BuddyPress as internal forum for the band. The frontend was created with Bootstrap. 
+    Visit the site on [crypticbrood.de](https://www.crypticbrood.de/).
+- year: 2003-2018
+  title: NecroSlaughter.de
+  description: |-
+    My first real official project. Way before CMS systems became popular I manually maintained an online fanzine / webzine about death metal and Grindcore. About 2006 I switched to Wordpress as CMS, wrote custom themes and plugins to fulfil my needs. After its funeral, I preserved its content with some python-scripts to be regenerated with the static site generator Hugo. You can find everything on [Github](https://github.com/christhulhu/necroslaughter).
+- year: 2016-2018
+  title: theNocturnalSilence.de
+  description: |-
+    Sometimes musical taste changes. Although I am still very fond of death metal and grindcore, I discovered the beauty of other dark musical genres. Most of this music did not fit into the concept of NecroSlaughter.de. Most of it was black metal, other did not really fit into other categories than "dark, gloomy, pale". So I decided to run another, excessive webzine for this kind of music. It only lasted about two years. Meanwhile its remains are sill available on [Github](https://github.com/christhulhu/thenocturnalsilence) in its original form as static generated Hugo site, the final sign of live was a printed edition of some selected interviews.
