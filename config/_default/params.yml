@@ -6,7 +6,7 @@ description: "Product Manager and Software-Developer for Telcos"
 avatar: "images/profile.jpg" 
 menu_item_separator: "|"
 
-mainSections: 
+homepage: 
   - "about"
 
 singleDateFormat: "2006-02-01"

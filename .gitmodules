@@ -1,0 +1,3 @@
+[submodule "themes/m10c"]
+	path = themes/m10c
+	url = https://github.com/christhulhu/hugo-theme-m10c

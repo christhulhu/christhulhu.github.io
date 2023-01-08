@@ -2,6 +2,7 @@
 title: "Christian Gehlen"
 date: 2023-01-06T11:58:46+01:00
 draft: false
+type: about
 ---
 
 My name is Christian Gehlen. I was born in 1985 and live near Aachen, Germany. I'm a Software-Developer since 2006. Although I work with Java as my primary language, I grew fond of other languages like Python as well. Since 2020 I also fulfil the role as Product Manager for several applications in the telco business. 

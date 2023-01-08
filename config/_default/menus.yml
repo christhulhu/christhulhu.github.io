@@ -2,16 +2,12 @@ main:
   - name: "About"
     weight: 100
     identifier: "about"
-    url: "/about/"
+    url: "/"
   - name: "Milestones"
     weight: 200
     identifier: "milestones"
     url: "/milestones/"    
-  - name: "Blog"
-    weight: 300
-    identifier: "posts"
-    url: "/posts/"
-
+  
 #footer:
 #  - name: "imprint"
 #    weight: 1

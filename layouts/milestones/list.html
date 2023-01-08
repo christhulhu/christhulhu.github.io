@@ -1,37 +1,67 @@
 {{ define "main" }}
-<div class="post animated fadeInDown">
 
-
-    
+<div class="post">   
 
 <div class="post__content">
-<h1>{{ .Title }}</h1>
+<h1>{{ upper .Title }}</h1>
 
 <h2>Professional</h2>
-<ul>
-  {{ range .Site.Data.milestones.professional }}
-    <li>
+
+{{ $key := .Site.Data.milestones.professional }}
+{{ $t := slice }}
+{{ range $k, $v := $key }}
+  {{ $t = $t | append $k}}
+{{ end }}
+{{ $t = sort $t "" "desc" }}
+
+{{ range $i := $t}}
+<h3 class="year">{{ $i }}</h3>
+  <ul class="milestones">
+  {{ range (index $key $i) }}
+    <li class="milestone">
       <div class="card">
-        <div class="card-head">{{.year }} {{ .title }}</div>
-        <div class="card-text">{{.description | markdownify}}</div>
+        <div class="card-head">
+          <div class="h4">{{.title}}</div>
+          <span class="ms-roles">{{ range .roles }}<span class="pill">{{.}}</span>{{end}}</span>
+        </div>
+        <div class="card-text">
+          {{- .description | markdownify -}}
+        </div>
       </div>
     </li>
-    {{ end }}
-</ul>
+  {{ end }}  
+  </ul>
+{{ end }}
 
 <h2>Personal</h2>
-<ul>
-  {{ range .Site.Data.milestones.private }}
-    <li>
+{{ $key := .Site.Data.milestones.private }}
+{{ $t := slice }}
+{{ range $k, $v := $key }}
+  {{ $t = $t | append $k}}
+{{ end }}
+{{ $t = sort $t "" "desc" }}
+
+{{ range $i := $t}}
+  <h3 class="year">{{ $i }}</h3>
+  <ul class="milestones">
+  {{ range (index $key $i) }}
+    <li class="milestone">
       <div class="card">
-        <div class="card-head">{{.year }} {{ .title }}</div>
-        <div class="card-text">{{.description | markdownify}}</div>
+        <div class="card-head">
+          <span class="h4">{{.title}}</span>
+          
+          <span class="ms-roles">{{ range .roles }}<span class="pill">{{.}}</span>{{end}}</span>
+          <span class="ms-duration">Project duration: {{ .from }}{{ if .till}}-{{.till}} {{ end }}</span>
+        </div>
+        <div class="card-text">
+          {{- .description | markdownify -}}
+        </div>
       </div>
     </li>
-    {{ end }}
-</ul>
+  {{ end }}  
+  </ul>
+{{ end }}
 
 </div>
-
 </div>
 {{ end }}
