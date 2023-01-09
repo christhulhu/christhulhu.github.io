@@ -16,16 +16,21 @@
 
 {{ range $i := $t}}
 <h3 class="year">{{ $i }}</h3>
-  <ul class="milestones">
+  <ul class="milestones card-holder">
   {{ range (index $key $i) }}
     <li class="milestone">
       <div class="card">
-        <div class="card-head">
-          <div class="h4">{{.title}}</div>
-          <span class="ms-roles">{{ range .roles }}<span class="pill">{{.}}</span>{{end}}</span>
+        <div class="card-header">
+          <div class="card-title">{{.title}}</div>
+          
         </div>
         <div class="card-text">
           {{- .description | markdownify -}}
+        </div>
+        <div class="card-footer">
+          {{ if .roles }}
+          <span class="small">My roles: {{ range .roles }}<span class="pill">{{.}}</span>{{end}}</span>
+          {{ end }}
         </div>
       </div>
     </li>
@@ -41,20 +46,26 @@
 {{ end }}
 {{ $t = sort $t "" "desc" }}
 
+
 {{ range $i := $t}}
-  <h3 class="year">{{ $i }}</h3>
-  <ul class="milestones">
+<h3 class="year">{{ $i }}</h3>
+  <ul class="milestones card-holder">
   {{ range (index $key $i) }}
     <li class="milestone">
       <div class="card">
-        <div class="card-head">
-          <span class="h4">{{.title}}</span>
-          
-          <span class="ms-roles">{{ range .roles }}<span class="pill">{{.}}</span>{{end}}</span>
-          <span class="ms-duration">Project duration: {{ .from }}{{ if .till}}-{{.till}} {{ end }}</span>
+        <div class="card-header">
+          <div class="card-title">
+            {{ if .type }}{{.type}}: {{ end }}{{.title}}
+          </div>
         </div>
         <div class="card-text">
           {{- .description | markdownify -}}
+        </div>
+        <div class="card-footer">
+          <span class="small">Project duration: <span class="pill">{{ .from }}{{ if .till}}-{{.till}} {{ end }}</span></span>
+          {{ if .roles }}
+          <span class="small">My roles: {{ range .roles }}<span class="pill">{{.}}</span>{{end}}</span>
+          {{ end }}       
         </div>
       </div>
     </li>
