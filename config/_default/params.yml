@@ -5,6 +5,7 @@ copyright: "2023"
 description: "Product Manager and Software-Developer for Telcos"
 avatar: "images/profile.jpg" 
 menu_item_separator: "|"
+favicon: "favicons/"
 
 homepage: 
   - "about"
