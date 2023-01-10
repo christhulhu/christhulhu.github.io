@@ -6,8 +6,12 @@ main:
   - name: "Milestones"
     weight: 200
     identifier: "milestones"
-    url: "/milestones/"    
-  
+    url: "/milestones/"
+  - name: "Skills"
+    weight: 300
+    identifier: "skills"
+    url: "/skills/"
+
 #footer:
 #  - name: "imprint"
 #    weight: 1

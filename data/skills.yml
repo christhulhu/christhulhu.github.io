@@ -1,0 +1,88 @@
+Languages:
+  - German (native speaker)
+  - English (bilingual high school degree, business grade level)
+  - java
+  - sql
+  - python
+  - Apache Camel DSL
+  - Apache Aries DSL
+Databases:
+  - Oracle
+  - MySQL / MariaDB
+  - PostgreSQL
+Markup:
+  - AsciiDoc
+  - Markdown
+  - HTML / CSS
+  - Yaml
+  - JSON
+Templating:
+  - GoTemplating
+  - Freemarker
+  - Jinja
+CMS:
+  - Wordpress
+  - BuddyPress
+  - WooCommerce
+  - Hugo
+  - Confluence
+Build:
+  - Maven
+  - Gradle
+  - Docker
+Container:
+  - Docker
+  - Docker-Compose
+SCM:
+  - Git
+  - GitHub
+  - Gitlab
+CI: 
+  - Jenkinks
+  - Github Actions
+  - Gitlab Pipelines
+  - Static Code Analysis
+  - Dependency Tracking
+Methodology:
+  - Rubber Duck Debugging
+  - Domain Driven Design
+  - Test Driven Design
+  - CQRS
+  - Event Sourcing
+  - MVC / CRUD
+API / M2M:
+  - SOAP
+  - REST
+  - Messaging / JMS
+  - X.509
+German Telco Market:
+  - LNP (PDA)
+  - MNP / zMRDB
+  - S/PRI
+  - WITA
+  - WBCI
+  - TMF OpenAPI
+  - TR-AAV
+  - Prokom / DeTeMedien
+  - SNP
+Frameworks:
+  - Apache Karaf
+  - Apache Camel
+  - Hibernate
+  - Vaadin
+  - Drop Wizard Metrics
+Web proxy:
+  - Nginx
+  - Apache httpd
+  - Traefik
+Metrics:
+  - Prometheus
+  - Grafana
+Documentation:
+  - Docs As Code
+  - Confluence
+  - PlantUML
+  - LucidChart
+  - Swagger
+OS:
+  - Linux (Server and Desktop)

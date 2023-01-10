@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<div class="post">   
+
+<div class="post__content">
+<h1>{{ upper .Title }}</h1>
+
+{{ $key := .Site.Data.skills }}
+{{ $t := slice }}
+{{ range $k, $v := $key }}
+  {{ $t = $t | append $k}}
+{{ end }}
+{{ $t = sort $t "" "desc" }}
+
+<ul class="milestones card-holder">
+    {{ range $key, $value := .Site.Data.skills}}
+    <li class="milestone">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">{{ $key }}</div>
+        </div>
+        <div class="card-text">
+            <ul>
+            {{range $value}}
+                <li>{{.}}</li>
+            {{ end }}
+            </ul>
+        </div>
+        <div class="card-footer">
+          
+        </div>
+      </div>
+    </li>
+    {{ end }}  
+</ul>
+
+
+
+</div>
+</div>
+{{ end }}
