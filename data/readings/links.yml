@@ -1,0 +1,38 @@
+- name: "Twitter-Thread: Using Google Calendar as a journal"
+  url: https://twitter.com/arb8020/status/1609649485625556992
+  summary: |-
+    Basically: A custom usage of Google Calendar as a personal journal. Interesting concept.
+  weight: 20230113
+  tags:
+    - self-organization
+    - journaling
+    - documentation
+- name: You Don't Need A UI Framework
+  url: https://www.smashingmagazine.com/2022/05/you-dont-need-ui-framework/
+  summary: |- 
+    Developers often reach for UI frameworks like Bootstrap or Material UI, hoping that they’ll save a bunch of time and quickly build a professional-looking app. Unfortunately, things rarely work out this way. Let’s talk about it.
+  weight: 20230110
+  tags:
+    - development
+    - design
+    - ux
+    - ui
+- name: What keeping a bullet journal taught me about using to-do list apps
+  url: https://www.theverge.com/23520891/bullet-journal-lessons-to-do-list-apps
+  summary: |-
+    2022 saw me give up on keeping a physical to-do list, but the experiment taught me the importance of putting effort into staying organized. 
+  weight: 20221225
+  tags:
+    - documentation
+    - bullet-journal
+    - todo-list
+    - task-management
+    - self-organization
+- name: "Your future self will thank you: Building your personal documentation"
+  url: https://github.com/readme/guides/private-documentation
+  summary: |-
+    I strongly recommend documentation. For everything. 
+  weight: 20230110
+  tags:
+    - documentation
+    - self-organization

@@ -12,6 +12,12 @@ main:
     identifier: "skills"
     url: "/skills/"
 
+#sub:
+#  - name: "Recommended Readings"
+#    weight: 100
+#    identifier: "readings"
+#    url: "/readings/"
+
 #footer:
 #  - name: "imprint"
 #    weight: 1

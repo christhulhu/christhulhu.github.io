@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<div class="post">   
+
+<div class="post__content">
+<h1>{{ upper .Title }}</h1>
+
+<ul class="card-holder">
+{{ range sort .Site.Data.readings.links "weight" "desc"}}
+    <li>
+        <div class="card">
+            <div class="card-header"><span class="card-title"><a href="{{.url}}" target="_blank">{{ .name }}</a></span></div>
+            <div class="card-text">{{ .summary }}</div>
+            <div class="card-footer">
+                Tags: {{range .tags}}<span class="pill">{{.}}</span>{{end}}
+            </div>
+        </div>
+    </li>
+{{ end }}
+</ul>
+
+</div>
+</div>
+{{ end }}

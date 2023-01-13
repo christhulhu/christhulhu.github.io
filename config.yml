@@ -26,6 +26,3 @@ markup:
         renderer:
           unsafe: true
 
-taxonomies:
-    category: categories
-    tag: tags
