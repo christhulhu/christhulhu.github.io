@@ -86,3 +86,9 @@ Documentation:
   - Swagger
 OS:
   - Linux (Server and Desktop)
+IDE:
+  - JetBrains IntelliJ idea
+  - Visual Studio Code
+  - NeoVim
+IaaS:
+  - Terraform
