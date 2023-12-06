@@ -1,12 +1,18 @@
 2022:
+  - title: Analysis of a legacy architecture und underlying business processes
+    roles:
+      - project manager
+      - consultant
+      - business analyst
+    description: |-
+      At a prominent telecommunications company in the German market, I played a pivotal role in conducting a thorough analysis of their historically evolved IT stack. The primary objective was to identify the various systems and interfaces within the existing infrastructure. Additionally, the analysis sought to unravel the intricacies of underlying business purposes and processes that had remained undocumented over time. This comprehensive assessment aimed to provide a clearer understanding of the company's technological landscape and enhance its operational transparency.
   - title: Modernization of a Legacy Application
     roles:
       - product manager
       - project manager
       - consultant
     description: |- 
-      Substitution of a legacy SOAP application by a state of the art RESTful Microservice based on TMF OpenAPI with Apache Karaf, Apache Camel on AWS infrastructure.
-      My job in this project was the communication with our customer, to understand his requirements and translate them in atomic tasks for our development team. As part of this role I was the representative stake holder in the agile development and took care of all documentation.
+      I played a key role in the project involving the replacement of a legacy SOAP application with a modern RESTful Microservice built on TMF OpenAPI, implemented with Apache Karaf and Apache Camel on AWS infrastructure. In this capacity, my responsibilities included communicating with our customer to grasp their requirements and translating them into detailed tasks for our development team. As the representative stakeholder in the agile development process, I ensured seamless communication and took charge of comprehensive documentation throughout the project.
     tags:
       - Apache Karaf
       - Apache Camel
@@ -20,8 +26,7 @@
       - project manager
       - solution architect
     description: |-
-      Lift and Shift of a legacy monolith application into a AWS cloud environment. 
-      Architectural Design, security assessment and Threat Modelling.
+      As a Solution Architect, I played a pivotal role in orchestrating the lift and shift of a legacy monolith application into the AWS cloud environment. This involved conducting comprehensive architectural design, performing a thorough security assessment, and employing threat modeling techniques. My responsibilities included overseeing the seamless transition of the application, ensuring optimal design considerations, and implementing robust security measures to mitigate potential threats in the cloud environment.
     tags:
       - AWS
       - DevOps
@@ -32,8 +37,7 @@
       - consultant
       - exhibitor
     description: |-
-      The [Breko FiberDays](https://www.fiberdays.de/) are an important fair for fiber networks, roll-out and wholesale/wholebuy. 
-      As part of the Enghouse Networks exhibitor team, I provided advice on the possibilities of the S/PRI process.
+      The [Breko FiberDays](https://www.fiberdays.de/) represent a significant event focusing on fiber networks, roll-out strategies, and wholesale/wholebuy opportunities. As a member of the Enghouse Networks exhibitor team, I offered guidance on the potentialities of the S/PRI process.    
     tags:
       - fair
       - consultant
@@ -42,14 +46,14 @@
     roles:
       - product manager
     description: |-
-      After fulfilling the role of a product manager for a LNP/MNP application for more than 6 years, I was officially promoted to Product Manager.
+      Having served as a product manager for an LNP/MNP application for over six years, I was formally promoted to the position of Product Manager.
     tags:
       - promotion
   - title: Modernization of a Java 8 Application
     roles:
       - lead developer
     description: |-
-      I am responsible for an business application that used Java 8 and Payarafish 5 as runtime environment. As part of the harmonization between all our products, I replaced its runtime with the OSGI container Apache Karaf. And shifted the whole code base to JDK 11.
+      I oversee a business application that previously utilized Java 8 and Payara Fish 5 as its runtime environment. As part of a harmonization effort across all our products, I transitioned its runtime to the OSGi container Apache Karaf and upgraded the entire code base to JDK 11.
     tags:
       - java
       - jdk11
@@ -60,7 +64,7 @@
       - lead developer
       - business analyst
     description: |-
-      As one of my customers switched his routing of mobile calls from service to his own routing, I implemented a complete and qualified set of routing data based on the official zMRDB by MNP GbR. Furthermore I implemented the process to keep the local data in sync with all qualified porting data of this source.
+      Upon a customer's transition from service routing to a proprietary routing system for mobile calls, I executed the implementation of a comprehensive and reliable set of routing data. This was based on the official zMRDB by MNP GbR. Additionally, I established a process to maintain synchronization between the local data and all qualified porting data from this source.
     tags:
       - MNP
       - routing
@@ -69,8 +73,7 @@
     roles:
       - business analyst
     description: |-
-      The ITEX PDA is the special interest group for Local Number Portability (LNP) in Germany. It is mandated by the AKNN (Arbeitskreis für Netz und Nummerierung) and responsible for the specification PDA that is officially passed a bill by the Bundesnetzagentur BNetzA.
-      Although I occasionally took part in meetings of this special interest group before, I was announced to represent Enghouse Networks Germany from this date on. 
+      The ITEX PDA serves as the special interest group for Local Number Portability (LNP) in Germany, mandated by the AKNN (Arbeitskreis für Netz und Nummerierung). It holds responsibility for the PDA specification, officially endorsed by the Bundesnetzagentur BNetzA. While I had occasionally participated in meetings of this special interest group in the past, I have now been officially designated to represent Enghouse Networks Germany as of this date.
     tags:
       - PDA
       - LNP
@@ -79,7 +82,7 @@
     roles:
       - Certified UX Design Specialist
     description: |-
-      I visited a three day training at XDI in Cologne, Germany and acquired the certification for an UX Design Specialist.
+      I completed a three-day training program at XDI in Cologne, Germany, and successfully obtained certification as a UX Design Specialist.
     tags:
       - UX
       - Design
@@ -89,7 +92,7 @@
       - lead developer
       - business analyst
     description: |-
-      With the implementation of the PDA 17 specification I took the role as lead developer as well as product manager to specify the requirements to my fellow developers .
+      I assumed the role of both lead developer and product manager during the implementation of the PDA 17 specification. In this capacity, I delineated the requirements to my fellow developers.
     tags: 
       - Java
       - PDA
@@ -100,9 +103,8 @@
       - developer
       - business analyst
     description: |-
-      There are several SOAP-based interfaces for processes of the German telecommunication market. Many of them use X.509 webservice security policies. And many of our customers use one of their interface to provide service for a number of clients.
-      To fulfil this needs, I was part of the development of a generic mediation and routing platform that is capable of enriching, routing, encrypting, of messages for several protocols as well as taking care of reportings and retries.
-      Some - but not all - of the protocols that are supported by this mediation platform are:
+      In the landscape of German telecommunication processes, there exist various SOAP-based interfaces, many of which employ X.509 webservice security policies. Numerous customers utilize one of these interfaces to deliver services to a multitude of clients.
+      To address this requirement, I played a crucial role in developing a versatile mediation and routing platform. This platform possesses the capability to enhance, route, encrypt messages for several protocols, and manage reporting and retries. Some of the supported protocols include, but are not limited to:
       * WBCI (WITA Based Carrier Interface, negotiation for provider change)
       * WITA (Wholesale platform of Deutsche Telekom AG)
       * S/PRI (Supplier/Partner Requisition Interface, Wholesale/Wholebuy for fiber lines)
@@ -118,9 +120,8 @@
     roles:
       - developer
     description: |- 
-      The WITA Based Carrier Interface was designed to substitute the old, analogue fax process for provider change. Part of the specification was the requirement of an official certification of the interface implementation. 
-      I was part of the development team that implemented a domain driven architecture using CQRS patterns and messaging between the components of this application. 
-      I was responsible to get our application officially certified. So I automated the process to have a reproduceable and testable quality assurance for our application.
+      The WITA Based Carrier Interface was created to replace the outdated analog fax process for provider change. A crucial component of the specification was the necessity for an official certification of the interface implementation.
+      I played a pivotal role in the development team tasked with implementing a domain-driven architecture using CQRS patterns and facilitating messaging between the components of this application. My responsibility extended to obtaining official certification for our application. To streamline and ensure the quality assurance of our application, I automated the certification process, making it reproducible and testable.
     tags:
       - Java
       - CQRS

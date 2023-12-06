@@ -92,3 +92,5 @@ IDE:
   - NeoVim
 IaaS:
   - Terraform
+"Configuration and Deployment":
+  - Ansible
