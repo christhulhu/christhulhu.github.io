@@ -7,7 +7,7 @@ title: "Christian Gehlen"
 #theme: "github.com/lxndrblz/anatole"
 # theme as git submodule
 #theme: "anatole"
-theme: "m10c"
+theme: "smol"
 
 summarylength: 10
 enableEmoji: true
@@ -22,7 +22,7 @@ pygmentsCodefencesGuessSyntax: true
 localizedDates: false
 
 markup:
-    goldmark:
-        renderer:
-          unsafe: true
+  goldmark:
+    renderer:
+      unsafe: true
 

@@ -1,16 +1,20 @@
 main:
-  - name: "About"
+  - name: "Work"
     weight: 100
-    identifier: "about"
-    url: "/"
-  - name: "Milestones"
+    identifier: "work"
+    url: "/work"
+  - name: "Life"
     weight: 200
-    identifier: "milestones"
-    url: "/milestones/"
-  - name: "Skills"
+    identifier: "life"
+    url: "/life"
+  - name: "Self-Organization"
     weight: 300
-    identifier: "skills"
-    url: "/skills/"
+    identifier: "organization"
+    url: "/organization"
+  - name: "Notes"
+    weight: 400
+    identifier: "notes"
+    url: "/notes/"
 
 #sub:
 #  - name: "Recommended Readings"
