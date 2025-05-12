@@ -1,20 +1,40 @@
 main:
-  - name: "Work"
+  - name: "/about"
     weight: 100
+    identifier: "about"
+    url: "/about"
+  - name: "/now"
+    weight: 100
+    identifier: "now"
+    url: "/now"
+  - name: "/work"
+    weight: 120
     identifier: "work"
     url: "/work"
-  - name: "Life"
-    weight: 200
+  - name: "/life"
+    weight: 130
     identifier: "life"
     url: "/life"
-  - name: "Self-Organization"
-    weight: 300
-    identifier: "organization"
-    url: "/organization"
-  - name: "Notes"
-    weight: 400
+  - name: "/pets"
+    weight: 140
+    identifier: "pets"
+    url: "/pets"
+  - name: "/uses"
+    weight: 150
+    identifier: "uses"
+    url: "/uses"
+  - name: "/notes"
+    weight: 200
     identifier: "notes"
     url: "/notes/"
+  - name: "/colophon"
+    weight: 300
+    identifier: "colophon"
+    url: "/colophon/"
+  - name: "/changelog"
+    weight: 400
+    identifier: "changelog"
+    url: "/changelog/"
 
 #sub:
 #  - name: "Recommended Readings"

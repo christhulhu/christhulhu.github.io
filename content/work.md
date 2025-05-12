@@ -1,5 +1,5 @@
 ---
-title: Work
+title: /work
 date: 2025-04-24
 ---
 

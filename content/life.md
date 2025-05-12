@@ -1,5 +1,5 @@
 ---
-title: Life
+title: /life
 date: 2025-04-24
 ---
 
