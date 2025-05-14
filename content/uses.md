@@ -22,11 +22,14 @@ Here’s a breakdown of the hardware, software, and workflows I rely on — for 
 - **Keyboard/Mouse:** Keychron K8 TKL Mechanical keyboard (brown switches), Logitech MX Master 2S mouse.
 - **Home-Server**: Lenovo ThinkCentre M73 (i3, 8GB RAM, 250GB SSD, 2015), a small and energy efficient server for local Docker deployments. Runs on Rocky Linux 
 
+> Read more on my [/home-it](/home-it)
+
 ---
 
 ## Software & Tools
 
-- **Note-taking & PKM:** [Obsidian.md](https://obsidian.md) — center of my knowledge system. Markdown-first!
+- **File Sync:** Nextcloud (self-hosted) — including Nextcloud Notes for mobile [Markdown](/notes/docs_as_code_markdown/) sync
+- **Note-taking & PKM:** [Obsidian.md](https://obsidian.md) — center of my knowledge system. [Markdown](/notes/docs_as_code_markdown/)-first!
 - **Writing & Publishing:**  
   - [Visual Studio Code](https://code.visualstudio.com) with **Markdown Preview Enhanced**  and AsciiDoctor
   - [Hugo](https://gohugo.io) for static site generation  
@@ -34,16 +37,17 @@ Here’s a breakdown of the hardware, software, and workflows I rely on — for 
 - **Diagrams & Docs as Code:**  
   - [draw.io](https://draw.io) for diagrams  
   - [PlantUML](https://plantuml.com) for technical visuals  
-  - Markdown & Asciidoc for everything
-- **File Sync:** Nextcloud (self-hosted) — including Nextcloud Notes for mobile Markdown sync
+  - [Markdown](/notes/docs_as_code_markdown/) & [AsciiDoc](/notes/docs_as_code_asciidoc/) for everything
+- **File Sync:** Nextcloud (self-hosted) — including Nextcloud Notes for mobile [Markdown](/notes/docs_as_code_markdown/) sync
 
 ---
 
 ## OS & Environment
 
-- **Primary OS:** Linux (Manjaro in Workstation, Rocky Linux in Servers)
+- **Primary OS:** Linux (Manjaro on private workstation, Rocky Linux on servers, Ubuntu on professional workstation)
 - **Shell:** Zsh with custom aliases and scripts
-- **Editor setup:** VS Code with a clean, minimal UI and focused color theme (Nord). And von, of course.
+- **Editor setup:** VS Code with a clean, minimal UI and focused color theme (Nord). And `vim`, of course.
+- **[Strato VPS Entry Linux VC2-4](/vps)** VPS
 
 ---
 

@@ -21,23 +21,23 @@ I write about what I do, build, learn, and sometimes obsess over. Here’s how t
 - **[/life](/life)** - A short summary of my as a person.
 - **[/pets](/pets)** - An overview on our little zoo.
 - **[/uses](/uses)** – The gear, software, and workflows I rely on.
+- **[/home-it](/home-it)** - Description on my Home-IT setup
+- **[/vps](/vps)** - My minimalistic virtual private server
 - **[/colophon](/colophon)** – How this site is built, deployed, and maintained.
 - **[/changelog](/changelog)** – A running log of structural and content updates.
 - **[/notes](/notes)** - Random notes, articles, remarks. 
 
 ---
 
-## Topics I write about
+## Content Philosophy
 
-- **Knowledge & Tools** – How I use Obsidian.md, Nextcloud, Markdown, and local-first tools.
-- **Tech** – Insights from managing complex modernization projects in a corporate context.
+This site is a place for imperfect thoughts. Between personal commitments and a demanding professional life, I don’t have the time — or the intention — to maintain a polished, high-frequency blog. Instead, I embrace a more relaxed, exploratory format inspired by the idea of a digital garden: expect loosely structured notes, occasional updates, and a slow, evolving body of content.
+
+I write primarily about topics that fascinate me in my spare time: personal knowledge management (PKM), documentation workflows, home automation, self-hosting, homelabs, and tinkering with tools like Home Assistant.
+
+What you won’t find here: details about my professional projects — out of respect for my clients and employer — or deeply personal updates, for reasons of privacy. While I’m passionate about our home renovation, our garden, and the complex dynamics of our multi-cat household, I don’t publish full logs or reports on those topics either. Some things are best kept offline.
 
 ---
-
-## What won't appear Here
-
-- **Anything involving my private life or Hobbies**. I simply do not have the time to post everything online - although I make private notes on almost everything. And sometimes privacy is more important than Internet fame.
-- **Anything work related**. NDAs and discretion are as important as my personal privacy.
 
 ## What might be here soonish
 

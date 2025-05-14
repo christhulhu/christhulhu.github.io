@@ -13,6 +13,12 @@ This page tracks meaningful changes to the structure, design, and content of thi
 
 ---
 
+## 2025-05-13
+
+- Created `/vps` and `/home-it` pages
+- Added some notes on Markdown, AsciiDoc
+- Work In Progress: `/listening`
+
 ## 2025-05-11
 
 - Created `/changelog` and `/colophon` pages

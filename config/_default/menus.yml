@@ -23,10 +23,25 @@ main:
     weight: 150
     identifier: "uses"
     url: "/uses"
+  - name: "/home-it"
+    weight: 160
+    identifier: "home-it"
+    url: "/home-it"
+  - name: "/vps"
+    weight: 170
+    identifier: "vps"
+    url: "/vps"
   - name: "/notes"
     weight: 200
     identifier: "notes"
     url: "/notes/"
+  
+    
+footer:
+  - name: "/privacy"
+    weight: 200
+    identifier: "privacy"
+    url: "/privacy"
   - name: "/colophon"
     weight: 300
     identifier: "colophon"
