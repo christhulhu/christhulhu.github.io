@@ -49,4 +49,4 @@ What you won’t find here: details about my professional projects — out of re
 ---
 
 Thanks for stopping by!  
-Feel free to [reach out](mailto:your@email.com) or send a Webmention if you're IndieWeb-minded.
+Feel free to [reach out](mailto:chr.schmitz01@gmail.com) or send a Webmention if you're IndieWeb-minded.
