@@ -1,0 +1,66 @@
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><style type=text/css>body{font-family:monospace}</style><title>Docs as Code with AsciiDoc</title>
+<meta name=description content="Product Manager and Software-Developer for Telcos"><meta name=author content="Christian Gehlen"><link rel=stylesheet href=/css/style.css></head><body><header>======================<br>== <a href=https://christhulhu.github.io/>Christian Gehlen</a> ==<br>======================<div style=float:right>My digital kitchen sink</div><br><p><nav><a href=/><b>Start</b></a>.
+<a href=/about><b>/about</b></a>.
+<a href=/now><b>/now</b></a>.
+<a href=/work><b>/work</b></a>.
+<a href=/life><b>/life</b></a>.
+<a href=/pets><b>/pets</b></a>.
+<a href=/uses><b>/uses</b></a>.
+<a href=/home-it><b>/home-it</b></a>.
+<a href=/vps><b>/vps</b></a>.
+<a href=/notes/><b>/notes</b></a>.</nav></p></header><main><article><h1>Docs as Code with AsciiDoc</h1><b><time>13.05.2025</time></b>
+<a href=/tags/documentation>documentation</a>
+<a href=/tags/asciidoc>asciidoc</a>
+<a href=/tags/technical>technical</a>
+<a href=/tags/writing>writing</a>
+<a href=/tags/tooling>tooling</a>
+<a href=/tags/docsascode>docsAsCode</a><div><h1 id=writing-documentation-as-code-with-asciidoc>Writing Documentation as Code with AsciiDoc</h1><h2 id=what-is-asciidoc>What is AsciiDoc?</h2><p><strong>AsciiDoc</strong> is a lightweight markup language that allows you to write documentation in plain text. It is designed to be human-readable and supports features like section headers, formatting, tables, links, images, callouts, and much more. AsciiDoc documents can be converted to various output formats such as HTML, PDF, DocBook, and EPUB using tools like <strong>Asciidoctor</strong> or <strong>Pandoc</strong>. AsciiDoc can also be included in toolchains like the <strong>Maven</strong> build tool.</p><blockquote><p>Official AsciiDoc documentation: <a href=https://docs.asciidoctor.org/asciidoc/latest/>https://docs.asciidoctor.org/asciidoc/latest/</a></p></blockquote><h2 id=why-use-asciidoc-instead-of-markdown>Why Use AsciiDoc Instead of Markdown?</h2><p>While <a href=/notes/docs_as_code_markdown/>Markdown</a> is simpler and widely used, AsciiDoc offers several advantages for technical documentation:</p><ul><li><strong>Semantic richness</strong>: AsciiDoc supports more complex content like footnotes, tables, callouts, and admonitions out of the box.</li><li><strong>Standardized syntax</strong>: Markdown exists in different flavors with different features. But AsciiDoc is standardized.</li><li><strong>Modular documentation</strong>: Easier inclusion of content from other files.</li><li><strong>Consistent output</strong>: With tools like Asciidoctor PDF, your output is predictable and customizable.</li><li><strong>Documentation as code</strong>: AsciiDoc integrates well with version control and CI/CD pipelines.</li></ul><hr><h2 id=setting-up-asciidoc-in-the-terminal>Setting Up AsciiDoc in the Terminal</h2><p>To use AsciiDoc in your terminal, install the <code>asciidoctor</code> tool and recommended plugins:</p><h3 id=prerequisites>Prerequisites</h3><ul><li>Ruby (2.5 or newer)</li><li>RubyGems</li></ul><h3 id=installation>Installation</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Install Asciidoctor</span>
+</span></span><span class=line><span class=cl>gem install asciidoctor
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Install PDF converter plugin</span>
+</span></span><span class=line><span class=cl>gem install asciidoctor-pdf
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Install diagram support</span>
+</span></span><span class=line><span class=cl>gem install asciidoctor-diagram
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># (Optional) Syntax highlighter support</span>
+</span></span><span class=line><span class=cl><span class=c1># Rouge is used by default, but you can also install Pygments</span>
+</span></span></code></pre></div><h3 id=usage>Usage</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Convert to HTML</span>
+</span></span><span class=line><span class=cl>asciidoctor mydoc.adoc
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Convert to PDF</span>
+</span></span><span class=line><span class=cl>asciidoctor-pdf mydoc.adoc
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Ensure diagrams and syntax highlighting work</span>
+</span></span><span class=line><span class=cl>asciidoctor -r asciidoctor-diagram mydoc.adoc
+</span></span></code></pre></div><blockquote><p>[!info]
+Some Linux distributions offer official packages that can be installed with the OS package manager. For example for Ubuntu you can install everything with
+<code>apt install asciidoc asciidoctor ruby-asciidoctor-pdf ruby-asciidoctor-plantuml</code></p></blockquote><hr><h2 id=setting-up-asciidoc-and-plugins-in-vscode>Setting Up AsciiDoc and Plugins in VSCode</h2><ol><li><strong>Install the AsciiDoc plugin</strong><ul><li>Search for <code>Asciidoctor</code> in the Extensions Marketplace and install it (recommended: <code>asciidoctor.asciidoctor-vscode</code>).</li></ul></li><li><strong>Enable diagram support</strong><ul><li>The extension will pick up diagrams if Asciidoctor Diagram is installed.</li></ul></li><li><strong>Configure PDF output</strong><ul><li>In VSCode, use the command palette to run: <code>Asciidoctor: Export document as PDF</code></li><li>This requires <code>asciidoctor-pdf</code> installed globally (via <code>gem</code>).</li></ul></li><li><strong>Live preview</strong><ul><li>Open your <code>.adoc</code> file and use the preview pane (Right-click → &ldquo;Open Preview to the Side&rdquo;).</li></ul></li></ol><hr><h2 id=basic-document-structure>Basic Document Structure</h2><p>Use a structured folder layout to separate content, includes, and diagrams:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>docs/
+</span></span><span class=line><span class=cl>├── index.adoc
+</span></span><span class=line><span class=cl>├── includes/
+</span></span><span class=line><span class=cl>│   ├── intro.adoc
+</span></span><span class=line><span class=cl>│   ├── setup.adoc
+</span></span><span class=line><span class=cl>├── diagrams/
+</span></span><span class=line><span class=cl>│   ├── architecture.puml
+</span></span><span class=line><span class=cl>│   ├── flow.svg
+</span></span></code></pre></div><p>In <code>index.adoc</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>= Project Documentation
+</span></span><span class=line><span class=cl>:toc: macro
+</span></span><span class=line><span class=cl>:toclevels: 2
+</span></span><span class=line><span class=cl>:sectnums:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>include::includes/intro.adoc[leveloffset=+1]
+</span></span><span class=line><span class=cl>include::includes/setup.adoc[leveloffset=+1]
+</span></span></code></pre></div><p>Diagrams directly in a document:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>[plantuml, diagrams/architecture, svg]
+</span></span><span class=line><span class=cl>----
+</span></span><span class=line><span class=cl>@startuml
+</span></span><span class=line><span class=cl>Alice -&gt; Bob: Hello
+</span></span><span class=line><span class=cl>@enduml
+</span></span><span class=line><span class=cl>----
+</span></span></code></pre></div><p>Include external diagrams in a document:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>[plantuml]
+</span></span><span class=line><span class=cl>----
+</span></span><span class=line><span class=cl>include::diagrams/diagram.puml[]
+</span></span><span class=line><span class=cl>----
+</span></span></code></pre></div><hr><h2 id=best-practices-for-writing-docs-as-code-with-asciidoc>Best Practices for Writing Docs as Code with AsciiDoc</h2><ul><li><strong>Keep it modular</strong>: Use <code>include::[]</code> directives for different sections.</li><li><strong>Use version control</strong>: Track documentation changes alongside code.</li><li><strong>Validate regularly</strong>: Run Asciidoctor in CI to ensure formatting and structure.</li><li><strong>Use attributes</strong>: Define and reuse variables (e.g., version numbers).</li><li><strong>Separate content and styling</strong>: Customize styling via PDF themes or CSS for HTML.</li><li><strong>Document diagrams</strong>: Place source files like <code>.puml</code> next to generated diagrams.</li><li><strong>Write for the reader</strong>: Use clear language, consistent formatting, and headings.</li></ul><h2 id=conclusion>Conclusion</h2><p>AsciiDoc is a powerful tool for managing technical documentation as code. With features tailored for complex documentation, it surpasses Markdown in many aspects and integrates well into developer workflows. Setting it up with VSCode and using terminal tools allows you to build professional, maintainable documentation efficiently.</p></div></article></main><footer><p>&copy; 2025 <a href=https://christhulhu.github.io/><b>Christian Gehlen</b></a>.
+<a href=/privacy><b>/privacy</b></a>.
+<a href=/colophon/><b>/colophon</b></a>.
+<a href=/changelog/><b>/changelog</b></a>.</p></footer></body></html>
