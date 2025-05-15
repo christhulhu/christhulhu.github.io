@@ -37,6 +37,19 @@ This site is a reflection of my fondness for structure, documentation, and open 
 - **File Sync:** [Nextcloud](https://nextcloud.com), self-hosted.
 - **Note Syncing on Mobile:** Nextcloud Notes app with Markdown folder integration.
 
+##  On AI Assistance
+
+Some parts of this site - especially metadata, drafts, or structural content - were created or refined with the help of AI tools. I use these assistants to accelerate ideation, clarify structure, or polish phrasing. All content is manually reviewed, edited, or extended by me before publication.
+
+The AI tools I currently use include:
+
+- **ChatGPT** (_OpenAI_) - for drafting, editing, and structural planning
+- **Claude** (_Anthropic_) - for coding and especially helpful for long-form and context-aware tasks
+- **NotebookLM** (_Google_) - for working with multiple scientific papers, getting summaries, find connections or gatherinformation spread about multiple documents.
+- **Github Copilot** (_Microsoft_) - coding companion in VSCode 
+
+> I treat AI as a writing partner, not a ghostwriter.
+
 ## Hosting
 
 - **Static hosting:** GitHub Pages via custom domain.
