@@ -30,6 +30,7 @@ But sometimes my musical taste is context dependent. For the gym I prefer the bl
 - Owls Woods Graves
 - Sonja
 - Die Antwoord
+- Spiritbox
 
 ### Evergreens
 

@@ -13,6 +13,11 @@ This page tracks meaningful changes to the structure, design, and content of thi
 
 ---
 
+## 2025-05-15
+
+- added [Nord colorscheme](https://www.nordtheme.com/). Basic theme was requested from Claude AI, but I made some manual modifications to match the aesthetics of the Nord theme from Obsidian.
+- added a [humans.txt](/humans.txt)
+
 ## 2025-05-13
 
 - Created `/vps` and `/home-it` pages

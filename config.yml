@@ -8,6 +8,9 @@ title: "Christian Gehlen"
 # theme as git submodule
 #theme: "anatole"
 theme: "smol"
+params:
+  customCSS: 
+  - "nord.css"
 
 summarylength: 10
 enableEmoji: true
