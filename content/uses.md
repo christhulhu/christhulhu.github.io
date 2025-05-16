@@ -7,6 +7,11 @@ layout: single
 draft: false
 description: "A list of hardware, software, and tools I use regularly — professionally and privately."
 aliases: ["/uses/"]
+tags:
+- uses
+- hardware
+- software
+- home-it
 ---
 
 Here’s a breakdown of the hardware, software, and workflows I rely on — for work, personal projects, and everything in between.
@@ -15,7 +20,7 @@ Here’s a breakdown of the hardware, software, and workflows I rely on — for 
 
 ## Hardware
 
-- **Laptop:** Dell XPS (i7, 16GB RAM, 2017), Manjaro Linux.
+- **Laptop:** Dell XPS 13 (i7, 16GB RAM, 2017), Manjaro Linux.
 - **Phone:** Xiaomi Mi10 (2020) with Android.
 - **Ebook-Reader:** Tolino Shine
 - **Headphones:** [Jabra Evolve2 65](https://www.jabra.com) — excellent Bluetooth headset, great for calls. For music I enjoy Anker Soundcore Q20i.

@@ -7,15 +7,27 @@ layout: single
 draft: false
 description: "Ongoing record of major changes to the site, structure, and content."
 aliases: ["/changelog/"]
+tags:
+- changelog
+- site-structure
+- log
 ---
 
 This page tracks meaningful changes to the structure, design, and content of this site. It’s both a technical record and a log of editorial updates.
 
 ---
 
+## 2025-05-16
+
+- added `/projects` and details on some past projects
+- added `/note`: _Backup-Strategy: Obsidian Notes to Git with NextCloud_
+- added and harmonized #tags on pages
+- added a [tagging guideline](/meta/tagging-guideline) - more for myself
+
 ## 2025-05-15
 
 - added [Nord colorscheme](https://www.nordtheme.com/). Basic theme was requested from Claude AI, but I made some manual modifications to match the aesthetics of the Nord theme from Obsidian.
+- extended `/colophony` on AI usage.
 - added a [humans.txt](/humans.txt)
 
 ## 2025-05-13

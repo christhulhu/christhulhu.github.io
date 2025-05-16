@@ -1,6 +1,11 @@
 ---
 title: /life
 date: 2025-04-24
+tags:
+- now
+- cats
+- music
+- project
 ---
 
 ## Now
@@ -18,15 +23,15 @@ date: 2025-04-24
 * Previously: Roaches, snakes, a chameleon, spiders, mice — a miniature zoo over the years.
 
 ## Music
-* **Elektronische Körpermusik** (2022–2023): Editorial work for a book about EBM.
-* **Ius Talionis** (2018–2024): Bass duties in a contemporary black metal band.
-* **theNocturnalSilence.de** (2016–2018): Webzine for black metal and all things gloomy.
-* **Cause Of Divorce** (2010–2020): Bass in grindcore for the unloved.
-* **NecroSlaughter.de** (2003–2018): A zine dedicated to death metal and grindcore.
+* **[Elektronische Körpermusik](https://www.elektronische-koerpermusik.de/)** (2022–2023): Editorial work for a book about EBM.
+* **[Ius Talionis](/projects/ius_talionis)** (2018–2024): Bass duties in a contemporary black metal band.
+* **[theNocturnalSilence.de](/projects/thenocturnalsilence_de)** (2016–2018): Webzine for black metal and all things gloomy.
+* **[Cause Of Divorce](/projects/cause_of_divorce)** (2010–2020): Bass in grindcore for the unloved.
+* **[NecroSlaughter.de](/projects/necroslaughter_de)** (2003–2018): A zine dedicated to death metal and grindcore.
 
 ## Web Projects
-* **scolohub.com** (2023–ongoing): A digital resource on centipede husbandry.
+* **[scolohub.com](https://scolohub.com/)** (2023–ongoing): A digital resource on centipede husbandry.
 * **lycanthropic.de** (2016): Web design project.
-* **theNocturnalSilence.de** (2016–2018): Gloomy music meets HTML.
+* **[theNocturnalSilence.de](/projects/thenocturnalsilence_de)** (2016–2018): Gloomy music meets HTML.
 * **Crypticbrood.de** (2015): Web design for a doom-laden trio.
-* **NecroSlaughter.de** (2003–2018): Where the underground found a voice — and a server.
+* **[NecroSlaughter.de](/projects/necroslaughter_de)** (2003–2018): Where the underground found a voice — and a server.

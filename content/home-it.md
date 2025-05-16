@@ -3,10 +3,8 @@ title: /home-it
 date: 2025-05-13
 draft: false
 tags:
-  - homelab
+  - home-it
   - self-hosting
-  - network
-  - infrastructure
 aliases:
   - /infra/home-it
 ---
@@ -47,6 +45,7 @@ Everything with **static DHCP leases**, even all client devices, documented via 
 
 - Updates for both the OS and running Docker Containers are implemented as **Ansible Playbooks**
 - **Backups** from my home server happen daily with `rsync` as `cron`-job
+  - More on [#backup-strategy](/tags/backup-strategy/)
 - All configurations on my home server are in a `git`-repository and versioned with every change
 
 ### Documentation & Monitoring

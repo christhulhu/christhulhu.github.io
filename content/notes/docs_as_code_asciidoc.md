@@ -6,15 +6,7 @@ draft: false
 tags:
   - documentation
   - asciidoc
-  - technical
-  - writing
-  - tooling
-  - docsAsCode
-categories:
-  - writing
-  - devops
-  - infrastructure
-  - tools
+  - docs-as-code
 series:
   - Docs as Code
 ---

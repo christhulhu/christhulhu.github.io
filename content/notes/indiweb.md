@@ -1,8 +1,9 @@
 ---
 title: "IndieWeb"
 date: 2025-05-12
-tags: ["indieweb", "web", "decentralization", "personal websites", "web standards"]
 draft: false
+tags: 
+- indieweb
 ---
 
 ## Summary

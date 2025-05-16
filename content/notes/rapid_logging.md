@@ -1,8 +1,11 @@
 ---
 title: "Rapid Logging"
 date: 2025-05-12
-tags: ["note-taking", "bullet journal", "productivity", "logging"]
 draft: false
+tags: 
+- note-taking
+- bullet-journal
+- productivity
 ---
 
 ## Summary

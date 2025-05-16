@@ -1,15 +1,12 @@
 ---
-title: Listening
+title: /listening
 date: 2025-05-13
 draft: false
 tags:
   - music
-  - listening
-  - audio
-  - metal
   - favorites
-  - deathMetal
-  - blackMetal
+  - death-metal
+  - black-metal
 aliases:
   - /listening
   - /music
@@ -23,26 +20,26 @@ But sometimes my musical taste is context dependent. For the gym I prefer the bl
 
 ### Current heavy Rotation
 
-- Electric Callboy
-- Blitzkid
-- Calabrese
-- Enforcer
-- Owls Woods Graves
-- Sonja
-- Die Antwoord
-- Spiritbox
+- **Electric Callboy**
+- **Blitzkid**
+- **Calabrese**
+- **Enforcer**
+- **Owls Woods Graves**
+- **Sonja**
+- **Die Antwoord**
+- **Spiritbox**
 
 ### Evergreens
 
 - **Ulcerate**: "_The Destroyers of All_" / "_Stare into Death and Be Still_" - Supreme Post-Death Metal with intense atmosphere and haunting melodies.
 - **The Smiths**: "_Hatful of Hallow_" - I like beautiful melodies telling me terrible things. Served by the incredible John Peel.
 - **Planks** - "_The Darkest Of Grey_" - Mastodon and Darkthrone play songs by The Cure.
-- Gorerotted - "Only Tools and Corpses"
-- Jack Slater - "Blut/Macht/Frei" / "Extinction Aftermath"
-- Devourment - "Butcher The Weak"
-- Necrophagist - "Epitaph"
-- Judas Priest - "Painkiller"
-- Last Days Of Humanity - Album titles irrelevant. 
+- **Gorerotted** - "_Only Tools and Corpses_" - Oldschool Death-Grind with twisted humor and technical finesse.
+- **Jack Slater** - "_Blut/Macht/Frei_" / "_Extinction Aftermath_" - The German Gorerotted and an underrated gem.
+- **Devourment** - "_Butcher The Weak_" - Blunt, but perfect for the Gym.
+- **Necrophagist** - "_Epitaph_" - A classic in exceptional technique and melodic songwriting
+- **Judas Priest** - "_Painkiller_" - A heavy metal classic.
+- **Last Days Of Humanity** - Album titles irrelevant. More kind of ambient than music, but somehow this calms me down. 
 
 ---
 

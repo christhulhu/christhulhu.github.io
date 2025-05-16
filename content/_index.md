@@ -20,6 +20,8 @@ I write about what I do, build, learn, and sometimes obsess over. Here’s how t
 - **[/work](/work)** - Some background about my profession as Technical Product Manager in R&D.
 - **[/life](/life)** - A short summary of my as a person.
 - **[/pets](/pets)** - An overview on our little zoo.
+- **[/listening](/listening)** - Some insights into my musical taste and liked podcasts.
+- **[/projects](/projects)** - A list of past and present projects in my life.
 - **[/uses](/uses)** – The gear, software, and workflows I rely on.
 - **[/home-it](/home-it)** - Description on my Home-IT setup
 - **[/vps](/vps)** - My minimalistic virtual private server
@@ -42,11 +44,10 @@ What you won’t find here: details about my professional projects — out of re
 ## What might be here soonish
 
 - /reading - An excerpt of noteworthy books and articles I've read.
-- /listening - Some insights into my musical taste and likes podcasts
-- /uses-not - stuff that I conciously do not use
+- /uses-not - stuff that I consciously do not use
 - /unicorns - semi-finished or abandoned projects of mine.
 
 ---
 
 Thanks for stopping by!  
-Feel free to [reach out](mailto:chr.schmitz01@gmail.com) or send a Webmention if you're IndieWeb-minded.
+Feel free to [reach out](mailto:chr.schmitz01@gmail.com).

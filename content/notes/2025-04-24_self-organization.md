@@ -2,11 +2,11 @@
 title: Self-Organization in 2025
 date: 2025-04-24
 tags: 
-- Task-Management
-- Notes
-- Journaling
-- VPS
-- Home-Server
+- task-management
+- note-taking
+- journaling
+- vps
+- home-it
 ---
 
 Over the years I tried different approaches to organize my life and keep track of stuff. There are a Lot of great methodologies, but IT took me some time until I figured out what works best for me. My current workflow is a pretty simple and straight forward hybrid approach between digital and analog techniques. 

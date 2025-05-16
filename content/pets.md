@@ -4,6 +4,11 @@ type: section
 layout: pets-list
 description: "A record of the animals that share or have shared our home."
 date: 2025-05-11
+tags:
+- pets
+- cats
+- centipede
+- project
 ---
 
 This is a personal record of the animals in my life – past and present.  

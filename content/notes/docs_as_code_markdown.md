@@ -7,14 +7,7 @@ tags:
   - markdown
   - note-taking
   - documentation
-  - workflow
-  - zettelkasten
-  - activities
-  - docsAsCode
-categories:
-  - writing
-  - tools
-  - methodology
+  - docs-as-code
 series:
   - Docs as Code
 ---

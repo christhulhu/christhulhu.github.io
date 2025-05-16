@@ -7,6 +7,8 @@ layout: single
 draft: false
 description: "Technical details and background on how this site is built, maintained, and published."
 aliases: ["/colophon/"]
+tags:
+- site-structure
 ---
 
 This site is a reflection of my fondness for structure, documentation, and open tools. Here's a breakdown of the tech stack and philosophies behind it.
@@ -67,6 +69,10 @@ The AI tools I currently use include:
 
 - I maintain changelogs and edit logs for major content areas.
 - Pages like [`/now`](/now), [`/uses`](/uses), and this one are updated manually as my workflow evolves.
+
+## Tags & Structure
+
+For internal consistency, I follow a tagging guideline, which I document [here](/meta/tagging-guideline/).
 
 ---
 

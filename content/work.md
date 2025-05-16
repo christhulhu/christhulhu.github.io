@@ -1,6 +1,9 @@
 ---
 title: /work
 date: 2025-04-24
+tags:
+- work
+- professional
 ---
 
 **Technical Product Manager in R&D**

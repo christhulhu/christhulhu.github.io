@@ -7,6 +7,9 @@ layout: single
 draft: false
 description: "What I'm currently working on and focusing my time and energy toward."
 aliases: ["/now/"]
+tags:
+- now
+- project
 ---
 _Last updated: May 2025_
 

@@ -3,9 +3,7 @@ title: /vps
 date: 2025-05-13
 draft: false
 tags:
-  - infrastructure
   - self-hosting
-  - linux
   - vps
 aliases:
   - /vps
@@ -52,4 +50,5 @@ I enjoy knowing what runs where and how. While I'm not a DevOps engineer by trad
 ### Maintenance Habits
 
 - Monthly updates and security audits
+- More on [#backup-strategy](/tags/backup-strategy/)
 

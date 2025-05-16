@@ -1,8 +1,10 @@
 ---
 title: "Notation of Terraristic Livestock"
 date: 2025-05-12
-tags: ["terraristics", "notation", "husbandry", "zoo records"]
 draft: false
+tags:
+- terraristics
+- notation
 ---
 
 ## Summary

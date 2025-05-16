@@ -1,8 +1,12 @@
 ---
 title: "Bullet Journal (BuJo)"
 date: 2025-05-12
-tags: ["productivity", "note-taking", "bullet journal", "analog", "logging"]
 draft: false
+tags: 
+- productivity
+- note-taking
+- journaling
+- bullet-journal
 ---
 
 ## Summary
