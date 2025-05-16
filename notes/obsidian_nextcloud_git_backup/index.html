@@ -1,0 +1,70 @@
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><style type=text/css>body{font-family:monospace}</style><title>Backup-Strategy: Obsidian Notes to Git with NextCloud</title>
+<meta name=description content="Product Manager and Software-Developer for Telcos"><meta name=author content="Christian Gehlen"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href="/nord.css?rnd=1747375755"></head><body><header>======================<br>== <a href=https://christhulhu.github.io/>Christian Gehlen</a> ==<br>======================<div style=float:right>My digital kitchen sink</div><br><p><nav><a href=/><b>Start</b></a>.
+<a href=/about><b>/about</b></a>.
+<a href=/now><b>/now</b></a>.
+<a href=/work><b>/work</b></a>.
+<a href=/life><b>/life</b></a>.
+<a href=/pets><b>/pets</b></a>.
+<a href=/uses><b>/uses</b></a>.
+<a href=/home-it><b>/home-it</b></a>.
+<a href=/vps><b>/vps</b></a>.
+<a href=/notes/><b>/notes</b></a>.</nav></p></header><main><article><h1>Backup-Strategy: Obsidian Notes to Git with NextCloud</h1><b><time>15.05.2025</time></b>
+<a href=/tags/backup-strategy>backup-strategy</a>
+<a href=/tags/git>git</a>
+<a href=/tags/home-it>home-it</a>
+<a href=/tags/home-automation>home-automation</a>
+<a href=/tags/self-hosting>self-hosting</a><div><p>There are plugins that add functionality to Obsidian to automatically backup your notes in a Git server or even use IT for synchronization between multiple devices.</p><p>Personally, I use my NextCloud instance and the <code>Remotely Save</code> Plugin for sync. But I want to be better safe than sorry and I know about the advantages of file revisions/versions provided by Git SCM. For this reason I wanted to backup my notes regularily in my Gitea instance on my <a href=/vps>vps</a>. Unfortunately, the Git Plugin for Obsidian is experimental for mobile devices. So I needed a different approach&mldr;</p><p>On my <a href=/home-it>home server</a> I have a continous sync with my NextCloud using <code>nextcloudcmd</code> as headless client and a simple <code>cron</code> job.
+Another job Is now responsible to commit a snapshot of my notes once a day into the remote Git Repository.</p><p><figure><img src=/images/obsidian_nextcloud_git_backup.png alt="Backup Sequence diagram"></figure></p><h2 id=setup-nextcloud-sync>Setup NextCloud Sync</h2><p>I use Rocky Linux on my home server and installed the <code>nextcloud-client</code> with <code>dnf</code></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo dnf install nextcloud-client
+</span></span></code></pre></div><p>Afterwards, I created a wrapper script in <code>~/bin/nextcloud-sync.sh</code> that gets called by a <code>cron</code> job to sync from my remote server to my local server:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl>nextcloudcmd ~/nextcloud https://user:password@server.tld
+</span></span></code></pre></div><p>(Of course the local directory <code>~/nextcloud</code> should be present on the server.</p><h2 id=initialize-git-repository>Initialize Git Repository</h2><p><strong>Assumption</strong>: You already have <code>git</code> installed on the Server.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>cd</span> ~/nextcloud/notes
+</span></span><span class=line><span class=cl>git init
+</span></span><span class=line><span class=cl>git remote add origin git@git-server:username/repo.git
+</span></span></code></pre></div><h3 id=setup-credential-helper>Setup Credential Helper</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>git config --global credential.helper store
+</span></span></code></pre></div><h3 id=optional-setup-gitignore>Optional: Setup <code>.gitignore</code></h3><p>If you want to exclude some files (or pattern) from your Git repo, you need to create a <code>.gitignore</code> file.</p><h3 id=manual-initial-commit-to-store-credential>Manual Initial commit to Store Credential</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>git commit -am <span class=s2>&#34;initial commit&#34;</span>
+</span></span><span class=line><span class=cl>git push --set-upstream origin main
+</span></span></code></pre></div><p>This step should query you for your Git credentials that are stored in the Git Credential Helper afterwards and will be reused by our <code>cronjob</code>.</p><h2 id=backup-script-for-periodic-backups>Backup Script for periodic backups</h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=c1># === Konfiguration ===</span>
+</span></span><span class=line><span class=cl><span class=nv>REPO_DIR</span><span class=o>=</span><span class=s2>&#34;</span><span class=nv>$HOME</span><span class=s2>/nextcloud/notes&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>LOGFILE</span><span class=o>=</span><span class=s2>&#34;</span><span class=nv>$REPO_DIR</span><span class=s2>/git-backup.log&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>DATE</span><span class=o>=</span><span class=k>$(</span>date <span class=s1>&#39;+%Y-%m-%d %H:%M:%S&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># === Logging-Funktion ===</span>
+</span></span><span class=line><span class=cl>log<span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;[</span><span class=nv>$DATE</span><span class=s2>] </span><span class=nv>$1</span><span class=s2>&#34;</span> &gt;&gt; <span class=s2>&#34;</span><span class=nv>$LOGFILE</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># === Ausführung ===</span>
+</span></span><span class=line><span class=cl><span class=nb>cd</span> <span class=s2>&#34;</span><span class=nv>$REPO_DIR</span><span class=s2>&#34;</span> <span class=o>||</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>    log <span class=s2>&#34;FEHLER: Verzeichnis </span><span class=nv>$REPO_DIR</span><span class=s2> nicht gefunden.&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>exit</span> <span class=m>1</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># === Git Workflow ===</span>
+</span></span><span class=line><span class=cl>log <span class=s2>&#34;Starte Git-Backup...&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Änderungen erfassen</span>
+</span></span><span class=line><span class=cl>git add . &gt;&gt; <span class=s2>&#34;</span><span class=nv>$LOGFILE</span><span class=s2>&#34;</span> 2&gt;<span class=p>&amp;</span><span class=m>1</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Nur committen, wenn es auch Änderungen gibt</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> ! git diff --cached --quiet<span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>    git commit -m <span class=s2>&#34;Automatisches Backup: </span><span class=nv>$DATE</span><span class=s2>&#34;</span> &gt;&gt; <span class=s2>&#34;</span><span class=nv>$LOGFILE</span><span class=s2>&#34;</span> 2&gt;<span class=p>&amp;</span><span class=m>1</span>
+</span></span><span class=line><span class=cl>    git push &gt;&gt; <span class=s2>&#34;</span><span class=nv>$LOGFILE</span><span class=s2>&#34;</span> 2&gt;<span class=p>&amp;</span><span class=m>1</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=o>[</span> <span class=nv>$?</span> -eq <span class=m>0</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>        log <span class=s2>&#34;Backup erfolgreich gepusht.&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span>
+</span></span><span class=line><span class=cl>        log <span class=s2>&#34;FEHLER beim Push.&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=k>fi</span>
+</span></span><span class=line><span class=cl><span class=k>else</span>
+</span></span><span class=line><span class=cl>    log <span class=s2>&#34;Keine Änderungen – kein Commit notwendig.&#34;</span>
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span></code></pre></div><h2 id=crontab>Crontab</h2><p>Edit the <code>crontab</code> with the command</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>crontab -e
+</span></span></code></pre></div><p>For this backup I added two periodic jobs:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>*/15 * * * $HOME/bin/nextcloud-sync.sh
+</span></span><span class=line><span class=cl>0 3 * * * $HOME/bin/obsidian_git_backup.sh
+</span></span></code></pre></div></div></article></main><footer><p>&copy; 2025 <a href=https://christhulhu.github.io/><b>Christian Gehlen</b></a>.
+<a href=/privacy><b>/privacy</b></a>.
+<a href=/colophon/><b>/colophon</b></a>.
+<a href=/changelog/><b>/changelog</b></a>.</p></footer></body></html>
