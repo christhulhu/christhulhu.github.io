@@ -20,6 +20,7 @@ Here’s what I’m currently focused on — professionally, personally, and cre
 ## Music & Creative Work
 
 - Wrapping up the **final stages of post-production** for the upcoming album by **Ius Talionis** — a long-term artistic endeavor that's finally approaching release readiness.
+- Tinkering with this **digital garden**. Creating some content, reliving the oldschool web2.0 experience and having some distance to social media. Simply enjoying Markdown and Hugo.
 
 ## Driving License (finally)
 
@@ -32,14 +33,13 @@ Here’s what I’m currently focused on — professionally, personally, and cre
 
 ## Tools & Thinking
 
-- Currently obsessed with **[Obsidian.md](https://obsidian.md/)** — refining my **personal knowledge management** system and building long-term structures for writing, documentation, and research.
+- Currently obsessed with **[Obsidian.md](/uses/obsidian)** — refining my **personal knowledge management** system and building long-term structures for writing, documentation, and research.
 - Slowly evolving a method that blends Markdown, YAML, tagging, and custom workflows — classic overengineering, but fun.
 
 ## Ongoing Life Projects
 
 - Continuing the long-haul **renovation of a 1960s house** that’s been structurally neglected for decades.
 - Simultaneously, keeping up with the **care of a large garden**, which demands seasonal attention, planning, and patience.
-
 - The eternal challenge: our **multi-cat household** with three distinct feline "factions", each with trauma, quirks, and complicated social dynamics.
   - Progress is real, but slow — and measured in months, not weeks.
 
@@ -52,4 +52,4 @@ Here’s what I’m currently focused on — professionally, personally, and cre
 ---
 
 Inspired by [Derek Sivers' /now movement](https://nownownow.com/).  
-This page tells you what I’m focused on at this point in my life.
+_This page tells you what I’m focused on at this point in my life._

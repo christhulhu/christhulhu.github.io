@@ -17,6 +17,11 @@ This page tracks meaningful changes to the structure, design, and content of thi
 
 ---
 
+## 2025-05-22
+
+- added some stuff af `/uses`: Hugo, Obsidian and TickTick
+- added my ad-hoc project: [Wildlife aid](/projects/wildlife)
+
 ## 2025-05-16
 
 - added `/projects` and details on some past projects

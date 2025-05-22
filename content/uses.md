@@ -34,10 +34,13 @@ Here’s a breakdown of the hardware, software, and workflows I rely on — for 
 ## Software & Tools
 
 - **File Sync:** Nextcloud (self-hosted) — including Nextcloud Notes for mobile [Markdown](/notes/docs_as_code_markdown/) sync
-- **Note-taking & PKM:** [Obsidian.md](https://obsidian.md) — center of my knowledge system. [Markdown](/notes/docs_as_code_markdown/)-first!
+- **Note-taking & PKM:** 
+  - [Obsidian](/uses/obsidian) — center of my knowledge system. [Markdown](/notes/docs_as_code_markdown/)-first!
+- **Staying Organized:**
+  - [TickTick](/uses/ticktick) — The underrated task management of my choice
 - **Writing & Publishing:**  
   - [Visual Studio Code](https://code.visualstudio.com) with **Markdown Preview Enhanced**  and AsciiDoctor
-  - [Hugo](https://gohugo.io) for static site generation  
+  - [Hugo](/uses/hugo) for static site generation  
   - Git + GitHub / Gitea for version control and deployment
 - **Diagrams & Docs as Code:**  
   - [draw.io](https://draw.io) for diagrams  
