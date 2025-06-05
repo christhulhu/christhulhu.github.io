@@ -45,6 +45,8 @@ Then came Kalli, a former stray. His arrival unexpectedly shifted the dynamics. 
 - 0.0.1 **Scolopendra spec.** "Celebes Purple" (Sulawesi)
 - 0.0.1 **Scolopendra dehaani** "Cherry Red" (Malaysia)
 - 0.0.6 **Scolopendra dehaani** "Yellow Leg" (Vietnam)
+- 0.0.5 **Scolopendra dehaani** "Orange Leg" (Vietnam, German Breed 2025)
+- 0.0.2 **Orya barbarica** (Morocco)
 
 **Roaches**
 
@@ -57,7 +59,9 @@ Then came Kalli, a former stray. His arrival unexpectedly shifted the dynamics. 
 - **Paul** (Cat): Comes for the food and is somehow antisocial. But we care for him anyway.
 - 3 **Hedgehogs**: After some experience in Wild Life rescue, we actively care for our spikey friends.
 - 2 **Squirrels**: beloved furry fellows in our garden.
-- Too many pretty cool insects, spiders, centipede, millipede and birds that live in our garden and participate from our passion about it.
+- A couple of **Bats**
+- A murder of young **crows** that enjoy our terrace as well as we do
+- Too many pretty cool insects, spiders, centipede, millipede and birds that live in our garden and participate from our passion about it. I think we have at least 7 different kinds of wasps, black bees and a couple of very friendly hornets <3
 
 ---
 

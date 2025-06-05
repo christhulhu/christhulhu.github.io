@@ -17,6 +17,10 @@ This page tracks meaningful changes to the structure, design, and content of thi
 
 ---
 
+## 2025-06-05
+
+- updated `/pets`
+
 ## 2025-05-22
 
 - added some stuff af `/uses`: Hugo, Obsidian and TickTick
