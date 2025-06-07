@@ -1,0 +1,22 @@
+@startmindmap home-assistant-services
+title Home Assistant Services
+!theme blueprint
+
++ Home Assistant
+++ AVM FRITZ!Box Tools
+-- Better Thermostat
+++ Generic Camera
+++ Google Cast
+-- HACS
+-- MQTT 
+++ Philips Hue
+-- Scheduler
+-- Sun
+++ Sonos
+-- Spotcast
+-- Spotify
+++ Tuya
+
+
+
+@endmindmap 

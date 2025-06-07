@@ -35,11 +35,9 @@ Everything with **static DHCP leases**, even all client devices, documented via 
 - **Traefik**: Reverse Proxy to access Docker Container
 - **PiHole**: Central ad-blocking and DNS for local network
 - **Dashy**: Dashboard for my apps and services and starting page for my browser
-- **Home Assistant** / **Zigbee2mqtt** / **Mosquitto**: Smart Home Hub. 
+- **Home Assistant** / **Zigbee2mqtt** / **Mosquitto**: Smart Home Hub. More on [`/uses/home-assistant`](/uses/home-assistant)
 - **Beaver Habit Tracker**: A self-hostable webapp in the style of Loop Habit Tracker
 - **Paperless NGX**: Powerful document management - but currently not really implemented in my workflows
-- To be decommissioned: **Bookstack**: A personal wiki. Was a nice try, but i stick to simple Markdown files
-- To be decomissioned: **HomeBox**: An inventory management application. Same as for Bookstack: I prefer flat Markdown.
 
 ### Maintenance
 

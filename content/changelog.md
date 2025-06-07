@@ -17,6 +17,10 @@ This page tracks meaningful changes to the structure, design, and content of thi
 
 ---
 
+## 2025-06-07
+
+- Added `/uses/home-assistant`
+
 ## 2025-06-05
 
 - updated `/pets`

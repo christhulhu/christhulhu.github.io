@@ -1,0 +1,21 @@
+@startmindmap zigbee2mqtt-iot-devices
+title Zigbee2mqtt Devices
+!theme blueprint
+
++ Zigbee2mqtt
+++ Aeotec Zi-Stick 
++++ SONOFF 
+++++ SNZB-02D
+++++ TRVZB
++++ IKEA
+++++ E2013
+++++ E22x4
+++++ L2112
+++++ LED2109G6
++++ Philips 
+++++ 929003017102
+++++ 929002398602
+-- Mosquitto
+--- Home Assistant
+
+@endmindmap
