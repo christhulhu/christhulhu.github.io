@@ -1,7 +1,7 @@
 ---
 title: "/pets/centipede"
 type: page
-layout: pets-list
+layout: single
 description: "Centipede in my care"
 date: 2025-06-08
 tags:
