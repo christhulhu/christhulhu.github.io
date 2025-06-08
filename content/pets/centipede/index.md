@@ -8,6 +8,8 @@ tags:
 - pets
 - centipede
 - project
+aliases:
+- /pets/centipede
 ---
 
 > I was into keeping centipede in my early 20s. I kept various Scolopendromorpha from 2005-2010ish and was very active in the forum Scolopendra.eu during this time. Then I took a break from the hobby and rediscovered my fascination for those creepy crawlers in 2022 again.
