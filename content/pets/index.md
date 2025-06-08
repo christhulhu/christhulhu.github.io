@@ -1,6 +1,6 @@
 ---
 title: "/pets"
-type: section
+type: page
 layout: pets-list
 description: "A record of the animals that share or have shared our home."
 date: 2025-05-11
@@ -47,6 +47,8 @@ Then came Kalli, a former stray. His arrival unexpectedly shifted the dynamics. 
 - 0.0.6 **Scolopendra dehaani** "Yellow Leg" (Vietnam)
 - 0.0.5 **Scolopendra dehaani** "Orange Leg" (Vietnam, German Breed 2025)
 - 0.0.2 **Orya barbarica** (Morocco)
+
+> More on my past and present stock of [`/pets/centipede/`](/pets/centipede).
 
 **Roaches**
 

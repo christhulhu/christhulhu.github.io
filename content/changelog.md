@@ -17,13 +17,17 @@ This page tracks meaningful changes to the structure, design, and content of thi
 
 ---
 
+## 2025-06-08
+
+- Added [`/pets/centipede/`](/pets/centipede)
+
 ## 2025-06-07
 
-- Added `/uses/home-assistant`
+- Added [`/uses/home-assistant`](/uses/home-assistant)
 
 ## 2025-06-05
 
-- updated `/pets`
+- updated [`/pets`](/pets)
 
 ## 2025-05-22
 
