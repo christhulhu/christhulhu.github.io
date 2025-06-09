@@ -39,6 +39,10 @@ Everything with **static DHCP leases**, even all client devices, documented via 
 - **Beaver Habit Tracker**: A self-hostable webapp in the style of Loop Habit Tracker
 - **Paperless NGX**: Powerful document management - but currently not really implemented in my workflows
 
+> More about my **Docker Setup** under [`/notes/home-server-docker-setup/`](/notes/home-server-docker-setup/)
+>
+> DNS routing and service wiring is done with **PiHole** and **Traefik**. I described this setup unter [`/notes/pihole-dns-setup`](/notes/pihole-dns-setup)
+
 ### Maintenance
 
 - Updates for both the OS and running Docker Containers are implemented as **Ansible Playbooks**

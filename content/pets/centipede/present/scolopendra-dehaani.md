@@ -1,5 +1,5 @@
 ---
-title: Scolopendra cingulata
+title: Scolopendra dehaani
 date: 2025-06-08
 ---
 
@@ -8,8 +8,8 @@ date: 2025-06-08
 
 ## Past
 
-**Scolopendra cingulata "Yellow Leg"**
-![Scolopendra cingulata "Yellow Leg"](/images/centipede/legacy/s-dehaani-yl.jpg)
+**Scolopendra dehaani "Yellow Leg"**
+![Scolopendra dehaani "Yellow Leg"](/images/centipede/legacy/s-dehaani-yl.jpg)
 
-**Scolopendra cingulata "Cherry Red"**
-![Scolopendra cingulata "Cherry Red"](/images/centipede/legacy/s-dehaani-cherry-red.jpg)
+**Scolopendra dehaani "Cherry Red"**
+![Scolopendra dehaani "Cherry Red"](/images/centipede/legacy/s-dehaani-cherry-red.jpg)

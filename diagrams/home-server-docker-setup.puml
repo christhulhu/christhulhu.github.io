@@ -1,0 +1,68 @@
+@startuml home-server-docker-setup
+title Home-Server Docker setup
+!theme blueprint
+
+
+component macvlan
+interface ":53 DNS listener" as dns_listener
+interface ":80 HTTP listener" as http_listener
+
+node "Home-Server" {
+
+    interface ":80:80 Port Mapping" as port_mapping
+
+    node "Docker" {
+        package dashy {
+            component dashy as dashy_service
+        }
+        package "habit-tracker" {
+            component beaverhabits
+        }
+        package "home-assistant" as hass_package {
+            component "home-assistant" as hass_service
+            component mosquitto
+            component zigbee2mqtt
+            
+            hass_service -up- mosquitto
+            mosquitto -down- zigbee2mqtt
+        }
+        package paperless {
+            component "paperless-ngx" as paperless_service
+            component postgres
+            component redis
+
+            paperless_service -up- redis 
+            paperless_service -up- postgres 
+        }
+        
+        package traefik {
+            component traefik as traefik_service
+        }     
+
+        package pihole {
+            component "pihole" as pihole_service
+        }
+
+        component Webproxy
+    }
+    
+}
+
+http_listener -down- port_mapping
+port_mapping -down- traefik_service
+
+traefik_service -- Webproxy
+
+
+dashy_service -- Webproxy
+beaverhabits -- Webproxy
+hass_service -- Webproxy
+zigbee2mqtt -- Webproxy
+paperless_service -- Webproxy
+
+pihole_service -- Webproxy
+pihole_service -right- macvlan
+
+dns_listener -- macvlan 
+
+@enduml

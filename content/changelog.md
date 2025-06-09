@@ -17,6 +17,11 @@ This page tracks meaningful changes to the structure, design, and content of thi
 
 ---
 
+## 2025-06-09
+
+- Added **Home-Server Docker Setup** under [`/notes/home-server-docker-setup/`](/notes/home-server-docker-setup/)
+- Added **PiHole DNS Setup** under [`/notes/pihole-dns-setup`](/notes/pihole-dns-setup)
+
 ## 2025-06-08
 
 - Added [`/pets/centipede/`](/pets/centipede)

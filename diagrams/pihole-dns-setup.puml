@@ -1,0 +1,29 @@
+@startuml pihole-dns-setup 
+title PiHole DNS Setup with Traefik
+!theme blueprint 
+
+interface "HTTP Listener" as http
+interface "DNS Listener" as dns
+
+node "Home Server" {
+    component "PiHole" as pihole
+
+    package "Docker Container" as container {
+        component "Traefik" as traefik
+        component "Other Service" as other
+        
+    }
+
+    interface "Docker Network Webproxy" as proxynetwork
+}
+
+http - traefik: Port :80
+dns - pihole: Port :53
+
+pihole -- proxynetwork
+traefik -- proxynetwork
+
+proxynetwork -- other
+
+
+@enduml
