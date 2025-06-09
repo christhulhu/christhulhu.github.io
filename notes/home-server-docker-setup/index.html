@@ -1,0 +1,18 @@
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><style type=text/css>body{font-family:monospace}</style><title>Home-Server Docker Setup</title><meta name=description content="Product Manager and Software-Developer for Telcos"><meta name=author content="Christian Gehlen"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href="/nord.css?rnd=1749470050"></head><body><header>======================<br>== <a href=https://christhulhu.github.io/>Christian Gehlen</a> ==<br>======================<div style=float:right>My digital kitchen sink</div><br><p><nav><a href=/><b>Start</b></a>.
+<a href=/about><b>/about</b></a>.
+<a href=/now><b>/now</b></a>.
+<a href=/work><b>/work</b></a>.
+<a href=/life><b>/life</b></a>.
+<a href=/pets><b>/pets</b></a>.
+<a href=/uses><b>/uses</b></a>.
+<a href=/home-it><b>/home-it</b></a>.
+<a href=/vps><b>/vps</b></a>.
+<a href=/notes/><b>/notes</b></a>.</nav></p></header><main><article><h1>Home-Server Docker Setup</h1><b><time>09.06.2025</time></b>
+<a href=/tags/tooling>tooling</a>
+<a href=/tags/uses>uses</a>
+<a href=/tags/deployment>deployment</a>
+<a href=/tags/docker>docker</a><div><blockquote><p>[!tldr] <strong>All services on my Home-Server run as Docker container.</strong></p><p>For external access, I use <strong>Traefik</strong> as ingress router. Other ports are made available with Docker MacVLAN.</p></blockquote><h2 id=basic-setup>Basic Setup</h2><ul><li>All services are bundled as <code>docker-compose.yml</code></li><li><strong>Traefik</strong> is my ingress router.<ul><li>with <code>labels</code> I configure the routing with Traefik</li><li>Traefik is the only Container with a port-binding to the host: <code>:80:80</code></li></ul></li><li>A dedicated Docker Network <code>webproxy</code> is used for all services that should be available via <code>http</code></li><li>All services that are required internally (i.e. databases) are only available in a dedicated network for the <code>docker-compose</code> setup and not reachable from outside.</li><li><strong>PiHole</strong> is used for local DNS.<ul><li>PiHoles DNS listener is made availabe via <strong>Docker MacVLAN</strong> on a dedicated IP address</li><li>PiHole Admin GUI is made available with Traefik</li></ul></li></ul><p><em>Schematic illustration of my Home-Server Docker Setup:</em>
+<a href=/images/home-server-docker-setup.png><figure><img src=/images/home-server-docker-setup.png alt="Home-Server Docker Setup"></figure></a></p></div></article></main><footer><p>&copy; 2025 <a href=https://christhulhu.github.io/><b>Christian Gehlen</b></a>.
+<a href=/privacy><b>/privacy</b></a>.
+<a href=/colophon/><b>/colophon</b></a>.
+<a href=/changelog/><b>/changelog</b></a>.</p></footer></body></html>
