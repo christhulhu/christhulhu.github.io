@@ -1,7 +1,7 @@
 ---
 title: "/uses"
 date: 2025-05-11
-lastmod: 2025-05-11
+lastmod: 2025-08-08
 type: page
 layout: single
 draft: false
@@ -46,7 +46,7 @@ Here’s a breakdown of the hardware, software, and workflows I rely on — for 
   - [draw.io](https://draw.io) for diagrams  
   - [PlantUML](https://plantuml.com) for technical visuals  
   - [Markdown](/notes/docs_as_code_markdown/) & [AsciiDoc](/notes/docs_as_code_asciidoc/) for everything
-- **File Sync:** Nextcloud (self-hosted) — including Nextcloud Notes for mobile [Markdown](/notes/docs_as_code_markdown/) sync
+- **File Sync:** Own stack of Webdav/Samba/sftp on my home-server
 
 ---
 
