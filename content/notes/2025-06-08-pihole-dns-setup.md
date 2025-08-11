@@ -2,6 +2,8 @@
 title: Local DNS with PiHole
 date: 2025-06-08
 lastmod: 2025-06-08
+type: note
+layout: single
 tags:
   - tooling
   - uses

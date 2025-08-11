@@ -2,6 +2,8 @@
 title: "Semantic Versioning (SemVer)"
 date: 2025-05-12
 draft: false
+type: note
+layout: single
 tags: 
 - versioning
 - software-development

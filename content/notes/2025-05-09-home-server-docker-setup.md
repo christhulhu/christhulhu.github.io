@@ -1,6 +1,8 @@
 ---
 title: Home-Server Docker Setup
 date: 2025-06-09
+type: note
+layout: single
 lastmod: 2025-06-09
 tags:
   - tooling

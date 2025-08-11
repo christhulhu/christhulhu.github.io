@@ -1,6 +1,9 @@
 ---
 title: "Backup-Strategy: Obsidian Notes to Git with NextCloud"
 date: 2025-05-15
+type: note
+layout: single
+
 tags:
 - backup-strategy
 - git

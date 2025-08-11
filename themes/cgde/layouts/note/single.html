@@ -1,0 +1,20 @@
+{{define "main"}}
+
+<h1>{{ .Title }}</h1>
+<div class="publishDate">{{ dateFormat "2006-01-02" .Date}}</div>
+<div class="content">{{ .Content }}</div>
+<div class="footer">
+  {{if .Params.tags}}
+    <strong>Tags</strong>: 
+	 	{{- range $index, $tag := .Params.tags }}
+    	{{- if gt $index 0 }}, {{ end }}
+		    <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" 
+    	   class="tag-link" 
+      	 title="Alle Posts mit Tag '{{ $tag }}'">
+	      	#{{ $tag }}
+  	  	</a>
+	  	{{- end }}
+  	{{end}}
+</div>
+
+{{end}}

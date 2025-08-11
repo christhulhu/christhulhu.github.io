@@ -11,6 +11,8 @@ tags:
 - site-structure
 ---
 
+# Colophon: How this site is build
+
 This site is a reflection of my fondness for structure, documentation, and open tools. Here's a breakdown of the tech stack and philosophies behind it.
 
 ---
@@ -29,15 +31,13 @@ This site is a reflection of my fondness for structure, documentation, and open 
 
 ## Theme & Styling
 
-- Minimal, content-first [smol](https://github.com/colorchestra/smol) theme with light customizations.
+- Minimal, content-first home-brewn theme, inspired by [Nord](https://www.nordtheme.com/) theme with light customizations.
 - Navigation is intentionally simple — no JavaScript frameworks, no trackers, no popups.
 
 ## Tools Used
 
-- **Editor:** [Visual Studio Code](https://code.visualstudio.com) with *Markdown Preview Enhanced* plugin.
+- **Editor:** Vi.
 - **PKM System:** [Obsidian.md](https://obsidian.md) — my second brain; most content starts or evolves there before being published.
-- **File Sync:** [Nextcloud](https://nextcloud.com), self-hosted.
-- **Note Syncing on Mobile:** Nextcloud Notes app with Markdown folder integration.
 
 ##  On AI Assistance
 

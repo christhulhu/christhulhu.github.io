@@ -1,0 +1,32 @@
+{{ $currentSection := .CurrentSection }}
+{{ if and $currentSection (gt (len $currentSection.Pages) 0) }}
+<aside class="sidebar desktop-only content">
+  <nav class="sidebar-nav">
+    <h3 class="sidebar-title"><strong><a href="{{$currentSection.Permalink}}">{{ $currentSection.Title }}</a></strong></h3>
+    <ul class="sidebar-menu">
+      {{ range $currentSection.Pages }}
+        <li>
+          <a href="{{ .Permalink }}" 
+             class="sidebar-link {{ if eq $.Permalink .Permalink }}active{{ end }}">
+            {{ .Title }}
+          </a>
+          
+          <!-- Unterunterseiten falls vorhanden -->
+<!--          {{ if .Pages }}
+            <ul class="sidebar-submenu">
+              {{ range .Pages }}
+                <li>
+                  <a href="{{ .Permalink }}" 
+                     class="sidebar-sublink {{ if eq $.Permalink .Permalink }}active{{ end }}">
+                    {{ .Title }}
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+	    {{ end }}-->
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</aside>
+{{ end }}

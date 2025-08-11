@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-3">
+                    <aside class="menu">
+                        <p class="menu-label">
+                            <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+                        </p>
+                        {{ $currentPage := . }}
+                        {{ range .Site.Sections.ByWeight }}
+                            <p class="menu-label">{{ .Title }}</p>
+                            <ul class="menu-list">
+                                {{ range .Pages.ByWeight }}
+                                    <li>
+                                        <a href="{{ .Permalink }}" class="{{ if eq .Permalink $currentPage.Permalink }}is-active{{ end }}">
+                                            {{ .Title }}
+                                        </a>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        {{ end }}
+                    </aside>
+                </div>
+                <div class="column is-9">
+                    <main class="content">
+                        {{ block "main" . }}{{ end }}
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

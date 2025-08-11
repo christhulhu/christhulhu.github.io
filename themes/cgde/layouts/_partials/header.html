@@ -1,0 +1,24 @@
+<header class="header">
+	<!-- Desktop Top Navigation -->
+	<nav class="navbar desktop-only">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="{{ .Site.BaseURL }}">{{ .Site.Title}}</a>
+
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			</a>
+		</div>
+		<div class="navbar-menu">
+		{{ range .Site.Menus.main }}
+		<a href="{{ .URL }}" 
+		   class="navbar-item {{ if hasPrefix $.Page.RelPermalink .URL }}is-active{{ end }}">
+			{{ .Name }}
+		</a>
+		{{ end }}
+		</div>
+	</nav>
+
+</header>

@@ -2,6 +2,8 @@
 title: "Notation of Terraristic Livestock"
 date: 2025-05-12
 draft: false
+type: note
+layout: single
 tags:
 - terraristics
 - notation

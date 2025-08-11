@@ -3,6 +3,8 @@ title: Taking Notes & Writing Documentation with Markdown
 date: 2025-05-13
 lastmod: 2025-05-13
 draft: false
+type: note
+layout: single
 tags:
   - markdown
   - note-taking

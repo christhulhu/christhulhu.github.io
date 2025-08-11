@@ -1,0 +1,21 @@
+services:
+  cgde:
+    image: nginx:alpine
+    container_name: cgde
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.cgde.rule=Host(`cgde.home`)"
+      - "traefik.http.routers.cgde.entrypoints=web"
+      - "traefik.http.routers.cgde.service=cgde"
+      - "traefik.http.services.cgde.loadbalancer.server.port=80"
+      - "traefik.docker.network=webproxy"
+    networks:
+      - webproxy
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+    restart: unless-stopped
+
+networks:
+  webproxy:
+    external: 
+      name: webproxy  

@@ -2,6 +2,9 @@
 title: Docs as Code with AsciiDoc
 date: 2025-05-13
 lastmod: 2025-05-13
+type: note
+layout: single
+
 draft: false
 tags:
   - documentation

@@ -1,5 +1,10 @@
 ---
 title: /notes
+type: note
+layout: section
+
 ---
 
-A mixture of blog and digital garden. Mostly random notes. More of a digital kitchen sink. 
+# Notes
+
+> A mixture of blog and digital garden. Mostly random notes. More of a digital kitchen sink. 

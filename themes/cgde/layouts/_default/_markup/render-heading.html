@@ -1,0 +1,4 @@
+<h{{ .Level }}{{ with .Anchor }} id="{{ . }}"{{ end }} class="title is-{{ .Level }} pt-2 pb-1">
+  {{ .Text | safeHTML }}
+  <!-- {{ if .Anchor }}<a href="#{{ .Anchor }}" class="header-anchor">#</a>{{ end }}-->
+</h{{ .Level }}>

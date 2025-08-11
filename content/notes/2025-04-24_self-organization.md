@@ -1,6 +1,8 @@
 ---
 title: Self-Organization in 2025
 date: 2025-04-24
+type: note
+layout: single
 tags: 
 - task-management
 - note-taking

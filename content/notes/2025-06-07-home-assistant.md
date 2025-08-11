@@ -2,6 +2,8 @@
 title: Home Assistant
 date: 2025-06-07
 lastmod: 2025-06-17
+type: note
+layout: single
 tags:
   - tooling
   - uses

@@ -1,7 +1,7 @@
 ---
 title: "/pets"
 type: page
-layout: pets-list
+layout: single
 description: "A record of the animals that share or have shared our home."
 date: 2025-05-11
 tags:
@@ -11,8 +11,10 @@ tags:
 - project
 ---
 
-This is a personal record of the animals in my life – past and present.  
-Some came from difficult backgrounds, others joined us later and helped restore balance.
+# Pets
+
+> This is a personal record of the animals in my life – past and present.  
+> Some came from difficult backgrounds, others joined us later and helped restore balance.
 
 ---
 
@@ -69,7 +71,7 @@ Then came Kalli, a former stray. His arrival unexpectedly shifted the dynamics. 
 
 ## In Memoriam
 
-**Cats**
+### Cats 
 
 - **Boomer**: the bullied but beloved one.
 - **Gaius**: the tragic unknown hero.

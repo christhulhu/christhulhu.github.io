@@ -7,20 +7,20 @@ layout: single
 draft: false
 description: "What I'm currently working on and focusing my time and energy toward."
 aliases: ["/now/"]
-tags:
-- now
-- project
 ---
-_Last updated: May 2025_
+
+# Now
+
+_Last updated: August 2025_
 
 Here’s what I’m currently focused on — professionally, personally, and creatively.
+Finished Projects for [2025](./2025). Overview on past and present [Projects](/projects).
 
 ---
 
-## Music & Creative Work
+## Continuous Home Renovations
 
-- Wrapping up the **final stages of post-production** for the upcoming album by **Ius Talionis** — a long-term artistic endeavor that's finally approaching release readiness.
-- Tinkering with this **digital garden**. Creating some content, reliving the oldschool web2.0 experience and having some distance to social media. Simply enjoying Markdown and Hugo.
+- Current project: **Renovations of our basement**, establishment of a nice workshop, a room for my centipede and a working space for my wife.
 
 ## Driving License (finally)
 
@@ -30,11 +30,6 @@ Here’s what I’m currently focused on — professionally, personally, and cre
 
 - Leading the **management of multiple parallel projects** for a major client undergoing a **radical technical modernization**.
 - The work is intense, high-stakes, and rewarding — involving strategy, coordination, and frequent firefighting.
-
-## Tools & Thinking
-
-- Currently obsessed with **[Obsidian.md](/uses/obsidian)** — refining my **personal knowledge management** system and building long-term structures for writing, documentation, and research.
-- Slowly evolving a method that blends Markdown, YAML, tagging, and custom workflows — classic overengineering, but fun.
 
 ## Ongoing Life Projects
 
@@ -46,6 +41,7 @@ Here’s what I’m currently focused on — professionally, personally, and cre
 ## Background Threads
 
 - Still deeply into **documentation culture**: everything gets logged, tracked, and versioned — from gym sessions to relationship insights.
+- Tinkering with my **home server**, living some back-to-the-primitive style in a terminal on a headless linux server.
 - Maintaining a strong bias for **structured thinking**, even in private life — sometimes too structured, admittedly.
 - Continually working on **Scolohub**, my long-term web project on centipede taxonomy and husbandry (currently in German, eventually bilingual).
 

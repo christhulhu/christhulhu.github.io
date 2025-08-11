@@ -2,6 +2,8 @@
 title: "Bullet Journal (BuJo)"
 date: 2025-05-12
 draft: false
+type: note
+layout: single
 tags: 
 - productivity
 - note-taking

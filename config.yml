@@ -1,4 +1,4 @@
-baseURL: "https://christhulhu.github.io"
+baseURL: "https://christian-gehlen.de"
 languageCode: "en"
 DefaultContentLanguage: "en"
 title: "Christian Gehlen"
@@ -7,10 +7,7 @@ title: "Christian Gehlen"
 #theme: "github.com/lxndrblz/anatole"
 # theme as git submodule
 #theme: "anatole"
-theme: "smol"
-params:
-  customCSS: 
-  - "nord.css"
+theme: "cgde"
 
 summarylength: 10
 enableEmoji: true

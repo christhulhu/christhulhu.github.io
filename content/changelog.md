@@ -13,9 +13,16 @@ tags:
 - log
 ---
 
-This page tracks meaningful changes to the structure, design, and content of this site. It’s both a technical record and a log of editorial updates.
+# Changelog
+
+> This page tracks meaningful changes to the structure, design, and content of this site. It’s both a technical record and a log of editorial updates.
 
 ---
+
+## 2025-08-11
+
+- Created custom theme
+- Removed some outdated pages. Update still pending.
 
 ## 2025-06-09
 
