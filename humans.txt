@@ -10,7 +10,7 @@ Standards: HTML5, CSS3, Markdown, Hugo
 Static Site Generator: Hugo
 Hosting: GitHub Pages
 DNS: Host Europe
-Theme: smol by colorchestra
+Theme: Home brewn theme inspired by Nord color scheme
 Built with: keyboard, coffee, curiosity
 
 /* THANKS */
