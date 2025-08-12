@@ -66,6 +66,7 @@ html, body, .section, .column {
 
 a.navbar-item {
   color: var(--nord-blue);
+  background-color: var(--nord0);
 }
 
 a.navbar-item.is-active {
@@ -73,8 +74,12 @@ a.navbar-item.is-active {
 }
 
 a.navbar-item:hover {
-  background: transparent;
+  background: var(--nord1);
   color: var(--nord-teal);
+}
+
+.navbar-menu {
+  background-color: var(--nord0);
 }
 
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
