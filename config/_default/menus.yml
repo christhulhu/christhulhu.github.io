@@ -3,41 +3,24 @@ main:
     weight: 100
     identifier: "about"
     url: "/about"
-  - name: "/now"
-    weight: 100
-    identifier: "now"
-    url: "/now"
-  - name: "/pets"
-    weight: 140
-    identifier: "pets"
-    url: "/pets"
-#  - name: "/uses"
-#    weight: 150
-#    identifier: "uses"
-#    url: "/uses"
-#  - name: "/home-it"
-#    weight: 160
-#    identifier: "home-it"
-#    url: "/home-it"
-  - name: "/notes"
+  - name: "/experience"
     weight: 200
-    identifier: "notes"
-    url: "/notes/"
-  
+    identifier: "experience"
+    url: "/experience"
+  - name: "/contact"
+    weight: 300
+    identifier: "contact"
+    weight: 400
+    url: "/contact"
     
 footer:
-  - name: "/privacy"
+  - name: "privacy"
     weight: 200
     identifier: "privacy"
     url: "/privacy"
-  - name: "/colophon"
-    weight: 300
-    identifier: "colophon"
-    url: "/colophon/"
-  - name: "/changelog"
+  - name: "impress"
     weight: 400
-    identifier: "changelog"
-    url: "/changelog/"
+    url: "/impress"
 
 #sub:
 #  - name: "Recommended Readings"
