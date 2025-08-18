@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Versioning on Christian Gehlen</title><link>https://christian-gehlen.de/tags/versioning/</link><description>Recent content in Versioning on Christian Gehlen</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 12 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://christian-gehlen.de/tags/versioning/index.xml" rel="self" type="application/rss+xml"/><item><title>Semantic Versioning (SemVer)</title><link>https://christian-gehlen.de/notes/2025-05-12-semantic_versioning/</link><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate><guid>https://christian-gehlen.de/notes/2025-05-12-semantic_versioning/</guid><description>&lt;h2 id="summary" class="title is-2 pt-2 pb-1">
- Summary
- 
-&lt;/h2>
-&lt;p>&lt;strong>Semantic Versioning&lt;/strong> (SemVer) is a versioning scheme for software that conveys meaning about the underlying changes through a structured version number format: &lt;code>MAJOR.MINOR.PATCH&lt;/code>.&lt;/p></description></item></channel></rss>
